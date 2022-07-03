@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolão FUTBR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon/favicon01.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!------------------------------------------------------
+                     UPDATE: 02/07/2022
+    -------------------------------------------------------->
+
+    <!--
+        =========================================
+
+    -->
+    <div class="barraNav">''
+        <div class="navegacao bg-dark">
+            <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+                <div class="photoPerfil bg-dark">
+                    <div id="img">
+                        <img width="35px" src="images/icon05.png" alt="Ivan Oliveira">
+                    </div>
+                </div>
+                <div class="navbar-brand"><img src="images/favicon.ico" alt=""> </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="myNav" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#carrossel">Career</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#myWorks">Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutMe">About me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/curriculo.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <!-- <li class="btn btn-primary">Comprar</li> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="navbar-brand"><img src="" alt=""> </div>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div id="myNav" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-toggle="tab">Home</a></li>
+                    <li class="nav-item"><a href="#price" class="nav-link" data-toggle="tab">Apostas IDA</a></li>
+                    <li class="nav-item"><a href="#price" class="nav-link" data-toggle="tab">Apostas VOLTA</a></li>
+                    <li class="nav-item"><a href="#price" class="nav-link" data-toggle="tab">Apostas Validas</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" data-toggle="tab">About</a></li>
+                </ul>
+            </div>
+        </nav> -->
+
+    <div id="apostas">
+        <!--================================= APOSTAS =================================-->
+
+        <table class="table">
+            <!-- <caption>Oitavas de Final da Libertadores da América 2022</caption> -->
+            <thead>
+                <!-- <tr>
+                            <th>TIMES ESQUERDA</th>
+                        </tr> -->
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width:12%">Athlético PR</td>
+                    <td style="width:10%"><input id="pl1" class="placar-E" type="number"></td>
+                    <td style="width:50%" rowspan="11" id="centroA">
+                        <div id="aposteA">
+                            <div id="inputNome">
+                                <!-- <label for="formGroupExampleInput" class="form-label">Nome</label> -->
+                                <input type="text" class="form-control" id="formGroupExampleInput nameApost"
+                                    placeholder="Nome do Apostador">
+                            </div>
+                            <div class="d-grid gap-2" id="botao">
+                                <button onclick="apostar()" class="btn btn-primary">Apostar</button>
+                            </div>
+                        </div>
+                        <div id="aposteB">
+
+                        </div>
+                    </td>
+                    <td style="width:10%"><input class="placar-D" type="number"></td>
+                    <td style="width:12%">Deportivo Tolima</td>
+                </tr>
+                <tr>
+                    <td>Libertad</td>
+                    <td><input id="pl2" class="placar-E" type="number"></td>
+                    <!-- <td rowspan="3" id="T"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td><input class="placar-D" type="number"></td>
+                    <td>Flamengo</td>
+                </tr>
+                <tr>
+                    <td class="linha">-------------------</td>
+                    <td></td>
+                    <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td></td>
+                    <td class="linha">---------------</td>
+                </tr>
+                <tr>
+                    <td>Fortaleza</td>
+                    <td><input id="pl3" class="placar-E" type="number"></td>
+                    <!-- <td></td> -->
+                    <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td><input class="placar-D" type="number"></td>
+                    <td>Corinthians</td>
+                </tr>
+                <tr>
+                    <td>Estudiantes</td>
+                    <td><input id="pl4" class="placar-E" type="number"></td>
+                    <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td><input class="placar-D" type="number"></td>
+                    <td>Boca Juniors</td>
+                </tr>
+                <tr>
+                    <td class="linha">---------------</td>
+                    <td></td>
+                    <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td></td>
+                    <td class="linha">---------------</td>
+                </tr>
+                <tr>
+                    <td>Emelec</td>
+                    <td><input class="placar-E" type="number"></td>
+                    <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td><input class="placar-D" type="number"></td>
+                    <td>Vélez</td>
+                </tr>
+                <tr>
+                    <td>Atlético MG</td>
+                    <td><input class="placar-E" type="number"></td>
+                    <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td><input class="placar-D" type="number"></td>
+                    <td>River Plate</td>
+                </tr>
+                <tr>
+                    <td class="linha">---------------</td>
+                    <td></td>
+                    <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td></td>
+                    <td class="linha">---------------</td>
+                </tr>
+                <tr>
+                    <td>Cerro Porteño</td>
+                    <td><input class="placar-E" type="number"></td>
+                    <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td><input class="placar-D" type="number"></td>
+                    <td>Talleres</td>
+                </tr>
+                <tr>
+                    <td>Palmeiras</td>
+                    <td><input class="placar-E" type="number"></td>
+                    <!-- <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td> -->
+                    <td><input class="placar-D" type="number"></td>
+                    <td>Cólon</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+
+        <!--================================= APOSTAS =================================-->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
