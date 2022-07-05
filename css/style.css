@@ -30,15 +30,9 @@ body {
     font-size: 35px;
 }
 
-#inage {
-    width: 180px;
-    border-radius: 8px;
-    opacity: 0.75;
-}
-
 a {
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 #linkedin:hover {
@@ -54,10 +48,6 @@ a {
     overflow: auto;
     height: 80%;
     padding: 0px;
-}
-
-.photoPerfil {
-    width: 10%;
 }
 
 .photoPerfil>div>img {
@@ -78,7 +68,6 @@ a {
     margin-right: 0;
 }
 
-
 /*  ================================================================
     ============================ BODY ==============================
     ================================================================ */
@@ -86,30 +75,28 @@ a {
 /* ======================== SECTION ======================== */
 section {
     /* border: 1px solid black; */
-    margin: 35px 6px;
+    margin: 40px 6px 6px 6px;
     position: static;
     overflow: hidden;
     padding: 10px;
-    height: 100vh;
-    box-shadow: 10px 1px 20px black;
+    height: 88vh;
+    box-shadow: 1px 1px 7px black;
     border-radius: 0.5%;
     /* box-shadow: 10px 10px 500px rgba(148, 10, 10, 0.468); */
 }
 
-div>#img {
-    margin: 3px 3px 3px 15px;
-}
 /* ============= HOME SECTION ============= */
 #home {
     background-image: url("../images/fundo.jpg");
     background-attachment: fixed;
+    background-size: cover;
 }
 
 #home>div>div {
     /* border: 1px solid black; */
-    background-image: linear-gradient(rgba(126, 188, 235, 0.959), rgba(246, 218, 126, 0.948));
+    background-image: linear-gradient(rgba(14, 119, 200, 0.433), rgba(175, 138, 18, 0.296));
     overflow: hidden;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.901);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.449);
     border-radius: 3%;
     padding: 20px;
     margin: 15px;
@@ -157,11 +144,11 @@ div>#img {
     ======================================================== */
     section {
         /* border: 1px solid black; */
-        margin: 35px 6px;
+        margin: 40px 6px 6px 6px;
         position: static;
         overflow: hidden;
         padding: 10px;
-        height: 110vh;
+        height: 85vh;
         /* box-shadow: 10px 10px 500px rgba(148, 10, 10, 0.468); */
     }
 
