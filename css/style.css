@@ -1,89 +1,172 @@
+@charset "UTF-8";
+@import url("fonts.css");
 
-.root {
-    background-color: rgba(45, 57, 115, 0.704);
+:root {
+    --cor0: #EFF7CF;
+    --cor1: #BAD9B5;
+    --cor2: #AB8C89;
+    --cor3: #732C2C;
+    --cor4: #420C14;
+    /* --cor5: #063d1e; */
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Titillium Web', sans-serif;
+    --font-lora: 'lora-regular', sans-serif;
+    --font-space: 'Space Mono', monospace;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-size: contain;
+    background-attachment: fixed;
+    margin-top: 0;
 }
 
-.container {
-    box-shadow: 1px 2px 5px black;
+/*  ================================================================
+    ========================== HEADER ===========================
+    ================================================================ */
+
+#nome {
+    font-family: var(--font-lora);
+    font-size: 35px;
 }
 
-table {
-    border-collapse: collapse;
-    /* width: 800px; */
+#inage {
+    width: 180px;
+    border-radius: 8px;
+    opacity: 0.75;
 }
 
-.placar-E, .placar-D {
-    width: 35px;
-    text-align: center;
+a {
+    text-decoration: none;
+    margin-left: 25px;
 }
 
-/* thead,
-.title {
-    background-color: gray;
+#linkedin:hover {
+    background-color: rgb(199, 12, 12);
     color: white;
-} */
-
-th, td {
-    border: 1px solid black;
-    padding: 3px;
-    text-align: center;
-    font-size: 14px;
+    transition: 0.5s;
 }
 
-tbody>tr:nth-child(even) {
-    background-color: rgba(202, 201, 201, 0.555);
+.barraNav {
+    /* position: sticky; */
+    /* top: 0; */
+    display: flex;
+    overflow: auto;
+    height: 80%;
+    padding: 0px;
 }
 
-tbody>tr:nth-child(odd) {
-    background-color: white;
+.photoPerfil {
+    width: 10%;
 }
 
-h3 {
-    padding: 15px;
-    color: rgb(190, 7, 7);
-    font-size: 16px;
-    text-align: center;
-    background-color: rgba(45, 57, 115, 0.704);
-    box-shadow: 1px 2px 7px black;
+.photoPerfil>div>img {
+    padding: 0;
+    width: 45px;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.linha {
-    color: rgba(128, 128, 128, 0.01);
-    box-shadow: 1px 2px 7px;
+.navegacao {
+    width: 100%;
+    /* border: 4px solid black; */
 }
 
-#centroA {
-    border: 1px solid rgba(96, 96, 96, 0.311);
+.navbar {
+    /* border: 1px solid red; */
+    margin-right: 0;
 }
 
-#apostas {
-    margin-top: 10px;
-}
 
-#inputNome {
-    width: auto;
-    margin: 7px;
-}
+/*  ================================================================
+    ============================ BODY ==============================
+    ================================================================ */
 
-#aposteA {
+/* ======================== SECTION ======================== */
+section {
     /* border: 1px solid black; */
-    display: inline-block;
-    width: 50%;
-    align-items: flex-end;
-    padding: 15px;
+    margin: 35px 6px;
+    position: static;
+    overflow: hidden;
+    padding: 10px;
+    height: 100vh;
+    box-shadow: 10px 1px 20px black;
+    border-radius: 0.5%;
+    /* box-shadow: 10px 10px 500px rgba(148, 10, 10, 0.468); */
 }
 
-#aposteB {
-    border: 1px solid black;
-    width: 85%;
-    display: inline-block;
+div>#img {
+    margin: 3px 3px 3px 15px;
+}
+/* ============= HOME SECTION ============= */
+#home {
+    background-image: url("../images/fundo.jpg");
+    background-attachment: fixed;
 }
 
-#botao {
-    margin: 7px;
+#home>div>div {
+    /* border: 1px solid black; */
+    background-image: linear-gradient(rgba(126, 188, 235, 0.959), rgba(246, 218, 126, 0.948));
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.901);
+    border-radius: 3%;
+    padding: 20px;
+    margin: 15px;
+    min-width: 230px;
+    min-height: 90px;
 }
 
+#home>div>div:hover {
+    cursor: pointer;
+    transition: 1.5s;
+    background-color: rgba(0, 0, 0, 0.996);
+    color: white;
+}
+
+#home>div {
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    text-align: center;
+}
+
+#home>h3 {
+    color: white;
+    width: auto;
+    text-align: center;
+
+}
+
+/* ============= OTHERS SECTION ============= */
+
+/*  ================================================================
+    ============================ FOOTER ============================
+    ================================================================ */
+
+
+/* ============================== MEDIA ============================== */
+@media screen and (max-width: 576px) {
+
+    /*  ====================================================
+    ====================== HEADER MEDIA=====================
+    ======================================================== */
+    
+
+    /*  ====================================================
+    ======================= BODY MEDIA =====================
+    ======================================================== */
+    section {
+        /* border: 1px solid black; */
+        margin: 35px 6px;
+        position: static;
+        overflow: hidden;
+        padding: 10px;
+        height: 110vh;
+        /* box-shadow: 10px 10px 500px rgba(148, 10, 10, 0.468); */
+    }
+
+    /*  ====================================================
+    ====================== FOOTER MEDIA ====================
+    ======================================================== */
+
+}
