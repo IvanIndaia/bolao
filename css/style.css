@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap');
 
 :root {
     --cor0: #EFF7CF;
@@ -7,12 +7,8 @@
     --cor2: #AB8C89;
     --cor3: #732C2C;
     --cor4: #420C14;
-    /* --cor5: #063d1e; */
+    
 
-    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --font-destaque: 'Titillium Web', sans-serif;
-    --font-lora: 'lora-regular', sans-serif;
-    --font-space: 'Space Mono', monospace;
 }
 
 body {
@@ -94,7 +90,7 @@ section {
 
 #home>div>div {
     /* border: 1px solid black; */
-    background-image: linear-gradient(rgba(14, 119, 200, 0.433), rgba(175, 138, 18, 0.296));
+    background-image: linear-gradient(rgba(14, 119, 200, 0.873), rgba(175, 138, 18, 0.801));
     overflow: hidden;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.449);
     border-radius: 3%;
@@ -107,7 +103,7 @@ section {
 #home>div>div:hover {
     cursor: pointer;
     transition: 1.5s;
-    background-color: rgba(0, 0, 0, 0.996);
+    background-color: rgba(77, 105, 5, 0.996);
     color: white;
 }
 
@@ -117,11 +113,11 @@ section {
     text-align: center;
 }
 
-#home>h3 {
-    color: white;
+#home>div>h3 {
     width: auto;
     text-align: center;
-
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
 }
 
 /* ============= OTHERS SECTION ============= */
@@ -148,7 +144,7 @@ section {
         position: static;
         overflow: hidden;
         padding: 10px;
-        height: 85vh;
+        height: 87vh;
         /* box-shadow: 10px 10px 500px rgba(148, 10, 10, 0.468); */
     }
 
