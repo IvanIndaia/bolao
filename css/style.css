@@ -88,7 +88,7 @@ section {
     background-size: cover;
 }
 
-#home>div>div {
+#home>#hdiv>.hdiv2 {
     /* border: 1px solid black; */
     background-image: linear-gradient(rgba(14, 119, 200, 0.873), rgba(175, 138, 18, 0.801));
     overflow: hidden;
