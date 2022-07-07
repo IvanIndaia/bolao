@@ -12,6 +12,7 @@
 }
 
 body {
+    background-color: black;
     background-size: contain;
     background-attachment: fixed;
     margin-top: 0;
@@ -75,10 +76,23 @@ section {
     position: static;
     overflow: hidden;
     padding: 10px;
-    height: 88vh;
     box-shadow: 1px 1px 7px black;
     border-radius: 0.5%;
-    /* box-shadow: 10px 10px 500px rgba(148, 10, 10, 0.468); */
+}
+
+.paginaInicial {
+    height: 87vh;
+}
+
+#hdiv>a>.hdiv2 {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hdiv>a {
+    text-decoration: none;
 }
 
 /* ============= HOME SECTION ============= */
@@ -88,7 +102,12 @@ section {
     background-size: cover;
 }
 
-#home>#hdiv>.hdiv2 {
+#home>h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+#home>#hdiv>a>.hdiv2 {
     /* border: 1px solid black; */
     background-image: linear-gradient(rgba(14, 119, 200, 0.873), rgba(175, 138, 18, 0.801));
     overflow: hidden;
@@ -100,14 +119,14 @@ section {
     min-height: 90px;
 }
 
-#home>div>div:hover {
+#home>#hdiv>a>.hdiv2:hover {
     cursor: pointer;
-    transition: 1.5s;
-    background-color: rgba(77, 105, 5, 0.996);
+    transition: 2s;
+    background-image: radial-gradient(rgba(14, 119, 200, 0.873), rgba(175, 138, 18, 0.801));
     color: white;
 }
 
-#home>div {
+#home>#hdiv {
     /* border: 1px solid black; */
     margin-top: 5px;
     text-align: center;
@@ -144,8 +163,6 @@ section {
         position: static;
         overflow: hidden;
         padding: 10px;
-        height: 87vh;
-        /* box-shadow: 10px 10px 500px rgba(148, 10, 10, 0.468); */
     }
 
     /*  ====================================================
