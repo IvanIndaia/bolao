@@ -13,3 +13,43 @@
     padding-top: 20px;
     text-align: center;
 }
+
+/* ============== APOSTAR ==============*/
+
+.container {
+    /* border: 1px solid black; */
+    display: grid;
+
+}
+
+.imag {
+    /* border: 1px solid black; */
+    width: 40%;
+    box-shadow: 1px 2px 12px black;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(229, 215, 215, 0.677);
+}
+
+.grid {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.d-flex {
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 800px) {
+    .imag {
+        /* border: 1px solid black; */
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .imag {
+        /* border: 1px solid black; */
+        width: 75%;
+    }
+}
