@@ -49,6 +49,10 @@
     border-radius: 17px;
 }
 
+.grid>div>.x {
+    align-self: center;
+}
+
 .d-flex {
     border: 1px solid red;
 }
