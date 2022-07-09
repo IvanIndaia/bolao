@@ -1,41 +1,43 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fauna+One&family=Gabriela&family=Glegoo:wght@400;700&family=IM+Fell+English&family=Inconsolata:wght@200&family=Ultra&display=swap');
+
+
 
 :root {
-    --cor0: #EFF7CF;
-    --cor1: #BAD9B5;
-    --cor2: #AB8C89;
-    --cor3: #732C2C;
-    --cor4: #420C14;
-    
+    --cor0: #ffffff;
+    --cor1: #1C3014;
+    --cor2: #6C1B08;
+    --cor3: #0A112B;
+    --cor4: #734428;
+    --cor5: #D6DCDA;
+    --cor99: #000000;
 
-}
+    --font01: 'DM Serif Display', serif;
+    --font02: 'Fauna One', serif;
+    --font03: 'Gabriela', serif;
+    --font04: 'Glegoo', serif;
+    --font05: 'IM Fell English', serif;
+    --font06: 'Inconsolata', monospace;
+    --font07: 'Ultra', serif;
 
-body {
-    background-color: black;
+    background-color: var(--cor2);
     background-size: contain;
     background-attachment: fixed;
     margin-top: 0;
+}
+
+body {
+    background-color: red;
 }
 
 /*  ================================================================
     ========================== HEADER ===========================
     ================================================================ */
 
-#nome {
-    font-family: var(--font-lora);
-    font-size: 35px;
-}
-
 a {
     text-decoration: none;
     margin-left: 10px;
-}
-
-#linkedin:hover {
-    background-color: rgb(199, 12, 12);
-    color: white;
-    transition: 0.5s;
 }
 
 .barraNav {
@@ -45,14 +47,8 @@ a {
     overflow: auto;
     height: 80%;
     padding: 0px;
-}
-
-.photoPerfil>div>img {
-    padding: 0;
-    width: 45px;
-    height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
+    font-family: var(--font05);
+    font-size: 20px;
 }
 
 .navegacao {
@@ -109,21 +105,27 @@ section {
 
 #home>#hdiv>a>.hdiv2 {
     /* border: 1px solid black; */
-    background-image: linear-gradient(rgba(14, 119, 200, 0.873), rgba(175, 138, 18, 0.801));
+    background-image: linear-gradient(var(--cor3), var(--cor2));
+    color: var(--cor5);
     overflow: hidden;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.449);
-    border-radius: 3%;
+    border-radius: 10px;
     padding: 20px;
     margin: 15px;
     min-width: 230px;
     min-height: 90px;
+    font-family: var(--font05);
+}
+
+#home>#hdiv>a>.hdiv2>h4 {
+    font-size: 25px;
 }
 
 #home>#hdiv>a>.hdiv2:hover {
     cursor: pointer;
-    transition: 2s;
-    background-image: radial-gradient(rgba(14, 119, 200, 0.873), rgba(175, 138, 18, 0.801));
-    color: white;
+    transition: 1s;
+    background-image: radial-gradient(var(--cor5), var(--cor4));
+    color: var(--cor1);
 }
 
 #home>#hdiv {
@@ -135,8 +137,10 @@ section {
 #home>div>h3 {
     width: auto;
     text-align: center;
-    font-family: 'Arima', cursive;
+    font-family: var(--font03);
     font-weight: bolder;
+    color: var(--cor1);
+    width: auto;
 }
 
 /* ============= OTHERS SECTION ============= */
@@ -147,26 +151,51 @@ section {
 
 
 /* ============================== MEDIA ============================== */
+@media screen and (max-width: 699px) {
+
+    /*  ====================================================
+        ====================== HEADER MEDIA=====================
+        ======================================================== */
+
+    .barraNav {
+        font-size: 14px;
+    }
+}
+    /* ============================== MEDIA ============================== */
 @media screen and (max-width: 576px) {
 
-    /*  ====================================================
+        /*  ====================================================
     ====================== HEADER MEDIA=====================
     ======================================================== */
-    
 
-    /*  ====================================================
+        /*  ====================================================
     ======================= BODY MEDIA =====================
     ======================================================== */
-    section {
-        /* border: 1px solid black; */
-        margin: 40px 6px 6px 6px;
-        position: static;
-        overflow: hidden;
-        padding: 10px;
-    }
+        section {
+            /* border: 1px solid black; */
+            margin: 40px 6px 6px 6px;
+            position: static;
+            overflow: hidden;
+            padding: 10px;
+        }
 
-    /*  ====================================================
+        #home>#hdiv {
+            /* border: 1px solid black; */
+            margin-top: 1px;
+            text-align: center;
+        }
+
+        #home>#hdiv>a>.hdiv2 {
+            /* border: 1px solid black; */
+            margin: 7PX;
+        }
+
+        #home>div>h3 {
+            margin-bottom: 1px;
+        }
+
+        /*  ====================================================
     ====================== FOOTER MEDIA ====================
     ======================================================== */
 
-}
+    }
