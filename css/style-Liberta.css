@@ -10,17 +10,13 @@
     margin-top: 20px;
 }
 
-#conteudo>h3 {
-    padding-top: 20px;
-    text-align: center;
-}
-
 /* ============== APOSTAR ==============*/
 
-.container {
-    /* border: 1px solid black; */
-    display: grid;
-
+h3 {
+    text-align: center;
+    margin-top: 7px; 
+    margin-bottom: 5px; 
+    padding-top: 20px;
 }
 
 .imag {
@@ -56,10 +52,6 @@
     display: flex;
 }
 
-.grid>div>.x>h3 {
-    margin-top: 7px;   
-}
-
 .placar {
     margin: 5px;
     width: 40px;
@@ -80,6 +72,7 @@
     margin-bottom: 25px;
 }
 
+/* ===================== MEDIA 800 ===================== */
 @media screen and (max-width: 800px) {
     .imag {
         /* border: 1px solid black; */
@@ -100,6 +93,7 @@
     }
 }
 
+/* ===================== MEDIA 470 ===================== */
 @media screen and (max-width: 470px) {
     .imag {
         /* border: 1px solid black; */
