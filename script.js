@@ -7,8 +7,6 @@ for (var i = 0; i < inpute.length; i++ ){
 
 
 
-
-
 function apostar() {
     // console.log(placarE.value)
     // placarE.value[1]

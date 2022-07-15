@@ -17,6 +17,13 @@ function apostarLiberta() {
             `)
 }
 
+
+  function acionarModal() {
+    let stg  = $('.modal')
+    stg.css({
+        "visibility": "visible"
+    })
+  }
 // function apostarLiberta() {
 
 //     let cap_c = document.getElementById("#CAP-C").value
