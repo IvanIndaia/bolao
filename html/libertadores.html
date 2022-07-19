@@ -89,9 +89,9 @@
                         <div>
                             <img class="logos" width="160px" src="../images/brasao/CAM.png" alt="">
                             <div class="x">
-                                <input id="" class="placar" type="text">
+                                <input id="CAM-C" class="placar" type="text">
                                 <h3>X</h3>
-                                <input class="placar" type="text">
+                                <input id="PAL-F" class="placar" type="text">
                             </div>
                             <img class="logos" width="160px" src="../images/brasao/PAL.png" alt="">
                         </div>
@@ -99,9 +99,9 @@
                         <div>
                             <img class="logos" width="160px" src="../images/brasao/PAL.png" alt="">
                             <div class="x">
-                                <input id="" class="placar" type="text">
+                                <input id="PAL-C" class="placar" type="text">
                                 <h3>X</h3>
-                                <input id="" class="placar" type="text">
+                                <input id="CAM-F" class="placar" type="text">
                             </div>
                             <img class="logos" width="160px" src="../images/brasao/CAM.png" alt="">
                         </div>
@@ -110,9 +110,9 @@
                         <div>
                             <img class="logos" class="logos" width="160px" src="../images/brasao/COR.png" alt="">
                             <div class="x">
-                                <input id="" class="placar" type="text">
+                                <input id="COR-C" class="placar" type="text">
                                 <h3>X</h3>
-                                <input id="" class="placar" type="text">
+                                <input id="FLA-F" class="placar" type="text">
                             </div>
                             <img class="logos" width="160px" src="../images/brasao/FLA.png" alt="">
                         </div>
@@ -120,9 +120,9 @@
                         <div>
                             <img class="logos" width="160px" src="../images/brasao/FLA.png" alt="">
                             <div class="x">
-                                <input id="" class="placar" type="text">
+                                <input id="FLA-C" class="placar" type="text">
                                 <h3>X</h3>
-                                <input id="" class="placar" type="text">
+                                <input id="COR-F" class="placar" type="text">
                             </div>
                             <img class="logos" width="160px" src="../images/brasao/COR.png" alt="">
                         </div>
@@ -131,9 +131,9 @@
                         <div>
                             <img class="logos" width="160px" src="../images/brasao/VEL.png" alt="">
                             <div class="x">
-                                <input id="" class="placar" type="text">
+                                <input id="VEL-C" class="placar" type="text">
                                 <h3>X</h3>
-                                <input id="" class="placar" type="text">
+                                <input id="TAL-F" class="placar" type="text">
                             </div>
                             <img class="logos" width="160px" src="../images/brasao/TAL.png" alt="">
                         </div>
@@ -141,9 +141,9 @@
                         <div>
                             <img class="logos" width="160px" src="../images/brasao/TAL.png" alt="">
                             <div class="x">
-                                <input id="" class="placar" type="text">
+                                <input id="TAL-C" class="placar" type="text">
                                 <h3>X</h3>
-                                <input id="" class="placar" type="text">
+                                <input id="VEL-F" class="placar" type="text">
                             </div>
                             <img class="logos" width="160px" src="../images/brasao/VEL.png" alt="">
                         </div>
@@ -152,8 +152,8 @@
                             data-target="#meuModal">
                             Apostar
                         </button> -->
-                        <button onclick="acionarModal()" data-toggle="modal" data-target="#meuModal">
-                            Mostrar MODAL    
+                        <button onclick="acionarModal()" class="btn btn-success btnApostar" data-toggle="modal" data-target="#meuModal">
+                            Apostar    
                         </button>
 
                         <div class="modal" id="meuModal">
@@ -162,12 +162,21 @@
                                     <div class="modal-header">
                                         <h1>Sua Aposta</h1>                
                                     </div>
-                                    <div class="modal-body display-2">
-                                        Só hoje 50% Off!
+                                    <div class="modal-body display-7">
+                                        <p style="text-align: center;">
+                                            CAP X EST <br>
+                                            EST X CAP <br>
+                                            CAM X PAL <br>
+                                            PAL X CAM <br>
+                                            COR X FLA <br>
+                                            FLA X COR <br>
+                                            VEL X TAL <br>
+                                            TAL X VEL <br>
+                                        </p>
                                     </div>
                                     <div class="modal-footer">
                                         <button class="btn btn-primary">
-                                            Comprar Agora
+                                            Confirmar
                                         </button>
                                     </div>
                                 </div>
@@ -222,7 +231,7 @@
 
     <!-- ================================== SECTION HOME ================================== -->
 
-    <script src="javascript/javaScript.js"></script>
+    <script src="../javascript/acao.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
