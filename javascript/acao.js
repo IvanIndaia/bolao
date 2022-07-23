@@ -5,20 +5,20 @@ function apostarLiberta() {
     let est1 = document.querySelector("#EST-F")
     let est_f = parseInt(est1.value)
 
-    let est2 = document.querySelector("#EST-C")
-    let est_c = parseInt(est2.value)
-    let cap2 = document.querySelector("#CAP-F")
-    let cap_f = parseInt(cap2.value)
+    // let est2 = document.querySelector("#EST-C")
+    // let est_c = parseInt(est2.value)
+    // let cap2 = document.querySelector("#CAP-F")
+    // let cap_f = parseInt(cap2.value)
 
-    let est2 = document.querySelector("#EST-C")
-    let est_c = parseInt(est2.value)
-    let cap2 = document.querySelector("#CAP-F")
-    let cap_f = parseInt(cap2.value)
+    // let est2 = document.querySelector("#EST-C")
+    // let est_c = parseInt(est2.value)
+    // let cap2 = document.querySelector("#CAP-F")
+    // let cap_f = parseInt(cap2.value)
 
-    let est2 = document.querySelector("#EST-C")
-    let est_c = parseInt(est2.value)
-    let cap2 = document.querySelector("#CAP-F")
-    let cap_f = parseInt(cap2.value)
+    // let est2 = document.querySelector("#EST-C")
+    // let est_c = parseInt(est2.value)
+    // let cap2 = document.querySelector("#CAP-F")
+    // let cap_f = parseInt(cap2.value)
 
     // alert (`CAP ${cap_c} X ${est_f} EST \n EST ${est_c} X ${cap_f} CAP \n
             

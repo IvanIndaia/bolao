@@ -52,29 +52,179 @@
         <div class="border-none abas">
             <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item"><a href="#apostar" class="nav-link active" data-toggle="tab">APOSTAR</a></li>
-                <li class="nav-item"><a href="#apostasValidas" class="nav-link" data-toggle="tab">APOSTAS VÁLIDAS</a></li>
-                <li class="nav-item text-dark"><a href="#classificacao" class="nav-link" data-toggle="tab">CLASSIFICAÇÃO</a></li>
+                <li class="nav-item"><a href="#apostasValidas" class="nav-link" data-toggle="tab">APOSTAS VÁLIDAS</a>
+                </li>
+                <li class="nav-item text-dark"><a href="#classificacao" class="nav-link"
+                        data-toggle="tab">CLASSIFICAÇÃO</a></li>
                 <li class="nav-item"><a href="#regras" class="nav-link" data-toggle="tab">REGRAS</a></li>
                 <!-- <li class="nav-item"><a href="#outros" class="nav-link" data-toggle="tab">OUTROS</a></li> -->
             </ul>
 
-            <div class="tab-content painelCopadoBrasil">
+            <div class="tab-content">
                 <div id="apostar" class="tab-pane active">
-                    <h2>Apostar</h2>
+                    <h3>Apostar</h3>
+                    <div class="grid">
+                        <!-------------------- 1º CONFRONTO IDA -------------------->
+                        <div>
+                            <img class="logos" width="160px" src="../images/brasao/ACG.png" alt="">
+                            <div class="x">
+                                <input id="ACG-C" class="placar" type="text">
+                                <h3>X</h3>
+                                <input id="COR-F" class="placar" type="text">
+                            </div>
+                            <img class="logos" width="160px" src="../images/brasao/COR.png" alt="">
+                        </div>
+                        <!-------------------- 1º CONFRONTO VOLTA -------------------->
+                        <div>
+                            <img class="logos" width="160px" src="../images/brasao/COR.png" alt="">
+                            <div class="x">
+                                <input id="COR-C" class="placar" type="text">
+                                <h3>X</h3>
+                                <input id="ACG-F" class="placar" type="text">
+                            </div>
+                            <img class="logos" width="160px" src="../images/brasao/ACG.png" alt="">
+                        </div>
+                        <!-------------------- 2º CONFRONTO IDA -------------------->
+                        <br>
+                        <div>
+                            <img class="logos" width="160px" src="../images/brasao/FOR.png" alt="">
+                            <div class="x">
+                                <input id="FOR-C" class="placar" type="text">
+                                <h3>X</h3>
+                                <input id="FLU-F" class="placar" type="text">
+                            </div>
+                            <img class="logos" width="160px" src="../images/brasao/FLU.png" alt="">
+                        </div>
+                        <!-------------------- 2º CONFRONTO VOLTA -------------------->
+                        <div>
+                            <img class="logos" width="160px" src="../images/brasao/FLU.png" alt="">
+                            <div class="x">
+                                <input id="FLU-C" class="placar" type="text">
+                                <h3>X</h3>
+                                <input id="FOR-F" class="placar" type="text">
+                            </div>
+                            <img class="logos" width="160px" src="../images/brasao/FOR.png" alt="">
+                        </div>
+                        <br>
+                        <!-------------------- 3º CONFRONTO IDA -------------------->
+                        <div>
+                            <img class="logos" class="logos" width="160px" src="../images/brasao/SAO.png" alt="">
+                            <div class="x">
+                                <input id="SAO-C" class="placar" type="text">
+                                <h3>X</h3>
+                                <input id="AME-F" class="placar" type="text">
+                            </div>
+                            <img class="logos" width="160px" src="../images/brasao/AME.png" alt="">
+                        </div>
+                        <!-------------------- 3º CONFRONTO VOLTA -------------------->
+                        <div>
+                            <img class="logos" width="160px" src="../images/brasao/AME.png" alt="">
+                            <div class="x">
+                                <input id="AME-C" class="placar" type="text">
+                                <h3>X</h3>
+                                <input id="SAO-F" class="placar" type="text">
+                            </div>
+                            <img class="logos" width="160px" src="../images/brasao/SAO.png" alt="">
+                        </div>
+                        <br>
+                        <!-------------------- 4º CONFRONTO IDA -------------------->
+                        <div>
+                            <img class="logos" width="160px" src="../images/brasao/CAP.png" alt="">
+                            <div class="x">
+                                <input id="CAP-C" class="placar" type="text">
+                                <h3>X</h3>
+                                <input id="FLA-F" class="placar" type="text">
+                            </div>
+                            <img class="logos" width="160px" src="../images/brasao/FLA.png" alt="">
+                        </div>
+                        <!-------------------- 4º CONFRONTO VOLTA -------------------->
+                        <div>
+                            <img class="logos" width="160px" src="../images/brasao/FLA.png" alt="">
+                            <div class="x">
+                                <input id="TAL-C" class="placar" type="text">
+                                <h3>X</h3>
+                                <input id="VEL-F" class="placar" type="text">
+                            </div>
+                            <img class="logos" width="160px" src="../images/brasao/CAP.png" alt="">
+                        </div>
+
+                        <!-- <button type="button" class="btn btn-success btnApostar" data-toggle="modal"
+                                    data-target="#meuModal">
+                                    Apostar
+                                </button> -->
+                        <button onclick="acionarModal()" class="btn btn-success btnApostar" data-toggle="modal"
+                            data-target="#meuModal">
+                            Apostar
+                        </button>
+
+                        <div class="modal" id="meuModal">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1>Sua Aposta</h1>
+                                    </div>
+                                    <div class="modal-body display-7">
+                                        <p style="text-align: center;">
+                                            CAP X EST <br>
+                                            EST X CAP <br>
+                                            CAM X PAL <br>
+                                            PAL X CAM <br>
+                                            COR X FLA <br>
+                                            FLA X COR <br>
+                                            VEL X TAL <br>
+                                            TAL X VEL <br>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary">
+                                            Confirmar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
                 <div id="apostasValidas" class="tab-pane fade">
-                    <h1>Apostas Válidas</h1>
+                    <h3>Apostas Válidas</h3>
                 </div>
                 <div id="classificacao" class="tab-pane fade">
-                    <h1>Classificação</h1>
+                    <h3>Classificação</h3>
                 </div>
                 <div id="regras" class="tab-pane fade">
-                    <h1>Regras</h1>
+                    <div id="conteudo">
+                        <h3>Regras do bolão</h3>
+
+                        <ol id="listaLiberta">
+                            <li>Bolão começa a partir das Quartas de Finais da Libertadores 2022.</li>
+                            <li>Palpite será validado após a confirmação do pgto.</li>
+                            <li>O palpite precisa ser preenchido antes do início de cada fazer.</li>
+                            <li>Cada fase deve ser colocado o seu palpite, caso contrário o placar será automaticamente
+                                0 x 0.</li>
+                            <li>O Valor de cada aposta é de R$ 5,00.</li>
+                            <li>O campeonato será de pontos corridos. Quem somar mais pontos será o Vencedor</li>
+                            <li><strong>Pontuação:</strong>
+                                <ul>
+                                    <li>Acertar o placar: 3 pontos</li>
+                                    <li>Acertar Vencedor/Empate: 1 ponto</li>
+                                    <li>Acertar quantidade de gols de um dos times: 0,5 ponto</li>
+                                </ul>
+                            </li>
+                            <li><strong>Premiação:</strong>
+                                <ul>
+                                    <li>1º Colocado: 60% do valor arrecadado</li>
+                                    <li>2º Colocado: 25% do valor arrecadado</li>
+                                    <li>3º Colocado: 15% do valor arrecadado</li>
+                                </ul>
+                        </ol>
+                    </div>
                 </div>
                 <!-- <div id="outros" class="tab-pane fade">
-                    <h1>Outros</h1>
-                    <img src="images/Interview.png" alt="">
-                </div> -->
+                            <h1>Outros</h1>
+                            <img src="images/Interview.png" alt="">
+                        </div> -->
             </div>
         </div>
 
