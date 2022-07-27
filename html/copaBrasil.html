@@ -149,16 +149,12 @@
                             <img class="logos" width="160px" src="../images/brasao/CAP.png" alt="">
                         </div>
 
-                        <!-- <button type="button" class="btn btn-success btnApostar" data-toggle="modal"
-                                    data-target="#meuModal">
-                                    Apostar
-                                </button> -->
-                        <button onclick="acionarModal()" class="btn btn-success btnApostar" data-toggle="modal"
-                            data-target="#meuModal">
+                        <button onclick="acionarModal()" class="btn btn-success btnApostar" data-toggle="modal">
+                            <!-- data-target="#meuModal"> -->
                             Apostar
                         </button>
 
-                        <div class="modal" id="meuModal">
+                        <div class="modal" tabindex="-1" role="dialog" id="meuModal">
                             <div class="modal-dialog modal-lg modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -177,9 +173,10 @@
                                         </p> -->
                                     </div>
                                     <div class="modal-footer">
-                                        <button class="btn btn-primary">
+                                        <button onclick="whatsapp()" class="btn btn-primary">
                                             Confirmar
                                         </button>
+                                        <button onclick="paginaBrasil()" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
