@@ -1,10 +1,14 @@
 function apostarLiberta() {
 
-    let cap1 = document.querySelector("#CAP-C")
-    let cap_c = parseInt(cap1.value)
-    let est1 = document.querySelector("#EST-F")
-    let est_f = parseInt(est1.value)
+    let cor1 = document.querySelector("#COR-F")
+    let corf = parseInt(cor1.value)
+    let acg1 = document.querySelector("#ACG-C")
+    let acgc = parseInt(acg1.value)
 
+    // alert(`ACG = ${acgc} x ${corf} COR`)
+    $(document).ready(function() {
+      $('#helloa').append(`<p style="text-align: center;"> ACG ${acgc} X ${corf} COR <br> EST X CAP <br> CAM X PAL <br> PAL X CAM <br> COR X FLA <br> FLA X COR <br> VEL X TAL <br> TAL X VEL <br> </p>`);
+  });
     // let est2 = document.querySelector("#EST-C")
     // let est_c = parseInt(est2.value)
     // let cap2 = document.querySelector("#CAP-F")
@@ -27,6 +31,8 @@ function apostarLiberta() {
 
 
   function acionarModal() {
+    // alert("Oi")
+    apostarLiberta()
     let stg  = $('.modal')
     stg.css({
         "visibility": "visible"
