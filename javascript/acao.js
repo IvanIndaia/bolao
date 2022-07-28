@@ -117,7 +117,10 @@ function acionarModal() {
    // ============= FIM =============
 
 
-  if (isNaN(acgc) || isNaN(corf) || isNaN(corc) || isNaN(acgf)) {
+  if (isNaN(acgc) || isNaN(corf) || isNaN(corc) || isNaN(acgf) || 
+  isNaN(forc) || isNaN(fluf) || isNaN(fluc) || isNaN(forf) || 
+  isNaN(saoc) || isNaN(amgf) || isNaN(amgc) || isNaN(saof) ||  
+  isNaN(capc) || isNaN(flaf) || isNaN(flac) || isNaN(capf)  ) {
     alert("Favor Preencher todos os resultados!")
   } else {
     apostarCopaBrasil()
