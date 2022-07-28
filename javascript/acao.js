@@ -121,7 +121,7 @@ function acionarModal() {
   isNaN(forc) || isNaN(fluf) || isNaN(fluc) || isNaN(forf) || 
   isNaN(saoc) || isNaN(amgf) || isNaN(amgc) || isNaN(saof) ||  
   isNaN(capc) || isNaN(flaf) || isNaN(flac) || isNaN(capf)  ) {
-    alert("Favor Preencher todos os resultados!")
+    alert("Favor preencher todos os resultados!")
   } else {
     apostarCopaBrasil()
   }
