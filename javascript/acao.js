@@ -184,8 +184,9 @@ function whatsapp() {
   // alert(st)
   // let s = "Ol%C3%A1%20me%20Amico%2C%20em%20que%20puesso%20ajduar%3F"
   // window.open(`https://api.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
-  window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
-
+  // window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
+  window.open(`https://wa.me/send?phone=5519992481225&text=${s}`, "blank");
+  
 }
 
 function paginaBrasil() {
