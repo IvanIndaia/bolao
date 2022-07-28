@@ -175,7 +175,7 @@ function whatsapp() {
    let capf = parseInt(cap2.value)
 
   // ============= FIM =============
-  alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \n Valor: R$ 7,00")
+  alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \n Valor: R$ 5,00")
   let s = `APOSTA *FUTBR* - COPA DO BRASIL 2022%0A%0AACG ${acgc} X ${corf} COR%0ACOR ${corc} X ${acgf} ACG%0AFOR ${forc} X ${fluf} FLU%0AFLU ${fluc} X ${forf} FOR%0ASAO ${saoc} X ${amgf} AMG%0AAMG ${amgc} X ${saof} SAO%0ACAP ${capc} X ${flaf} FLA%0AFLA ${flac} X ${capf} CAP`
   // let s = toString(st)
 
