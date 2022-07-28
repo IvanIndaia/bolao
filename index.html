@@ -37,9 +37,12 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="html/copaBrasil.html">Copa do Brasil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/libertadores.html">Libertadores</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/sulAmericana.html">Sul-Americana</a></li>
-                        <li class="nav-item"><a class="nav-link" href="html/copaMundo.html">Copa do Mundo</a></li>
+                        <li class="nav-item"><a onclick="popUP()" class="nav-link" href="#">Libertadores</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="html/libertadores.html">Libertadores</a></li> -->
+                        <li class="nav-item"><a onclick="popUP()" class="nav-link" href="#">Sul-Americana</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="html/sulAmericana.html">Sul-Americana</a></li> -->
+                        <li class="nav-item"><a onclick="popUP()" class="nav-link" href="#">Copa do Mundo</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="html/copaMundo.html">Copa do Mundo</a></li> -->
                     </ul>
                 </div>
             </nav>
@@ -57,17 +60,20 @@
                     <h4>Copa do Brasil</h4>
                 </div>
             </a>
-            <a href="html/libertadores.html">
+            <a onclick="popUP()" href="#">
+                <!-- <a href="html/libertadores.html"></a> -->
                 <div class="hdiv2">
                     <h4>Libertadores</h4>
                 </div>
             </a>
-            <a href="html/sulAmericana.html">
+            <a onclick="popUP()" href="#">
+                <!-- <a href="html/sulAmericana.html"></a> -->
                 <div class="hdiv2">
                     <h4>Sul-Americana</h4>
                 </div>
             </a>
-            <a href="html/copaMundo.html">
+            <a onclick="popUP()" href="#">
+                <!-- <a href="html/copaMundo.html"></a> -->
                 <div class="hdiv2">
                     <h4>Copa do Mundo</h4>
                 </div>
@@ -97,7 +103,7 @@
 
     </section> -->
 
-    <script src="javascript/javaScript.js"></script>
+    <script src="javascript/acao.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
