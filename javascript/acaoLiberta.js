@@ -1,50 +1,50 @@
-function apostarCopaBrasil() {
-  // ============= COR x ACG =============
-  // let cor1 = document.querySelector("#COR-F")
-  // let corf = parseInt(cor1.value)
-  // let acg1 = document.querySelector("#ACG-C")
-  // let acgc = parseInt(acg1.value)
+function apostarLibertadores() {
+  // ============= EST x CAP =============
+  let est1 = document.querySelector("#EST-F")
+  let estf = parseInt(est1.value)
+  let cap1 = document.querySelector("#CAP-C")
+  let capc = parseInt(cap1.value)
 
-  let cor2 = document.querySelector("#COR-C")
-  let corc = parseInt(cor2.value)
-  let acg2 = document.querySelector("#ACG-F")
-  let acgf = parseInt(acg2.value)
+  let est2 = document.querySelector("#EST-C")
+  let estc = parseInt(est2.value)
+  let cap2 = document.querySelector("#CAP-F")
+  let capf = parseInt(cap2.value)
 
-  // ============= FLU x FOR =============
+  // ============= PAL x CAM =============
 
-  let flu1 = document.querySelector("#FLU-C")
-  let fluc = parseInt(flu1.value)
-  let for1 = document.querySelector("#FOR-F")
-  let forf = parseInt(for1.value)
+  let cam1 = document.querySelector("#CAM-C")
+  let camc = parseInt(cam1.value)
+  let pal1 = document.querySelector("#PAL-F")
+  let palf = parseInt(pal1.value)
 
-  let flu2 = document.querySelector("#FLU-F")
-  let fluf = parseInt(flu2.value)
-  let for2 = document.querySelector("#FOR-C")
-  let forc = parseInt(for2.value)
+  let cam2 = document.querySelector("#CAM-F")
+  let camf = parseInt(cam2.value)
+  let pal2 = document.querySelector("#PAL-C")
+  let palc = parseInt(pal2.value)
 
-  // ============= AMG x SAO =============
-
-  let amg1 = document.querySelector("#AMG-F")
-  let amgf = parseInt(amg1.value)
-  let sao1 = document.querySelector("#SAO-C")
-  let saoc = parseInt(sao1.value)
-
-  let amg2 = document.querySelector("#AMG-C")
-  let amgc = parseInt(amg2.value)
-  let sao2 = document.querySelector("#SAO-F")
-  let saof = parseInt(sao2.value)
-
-  // ============= FLA x CAP =============
-
-  // let fla2 = document.querySelector("#FLA-C")
-  // let flac = parseInt(fla2.value)
-  // let cap2 = document.querySelector("#CAP-F")
-  // let capf = parseInt(cap2.value)
+  // ============= FLA x COR =============
 
   let fla1 = document.querySelector("#FLA-F")
   let flaf = parseInt(fla1.value)
-  let cap1 = document.querySelector("#CAP-C")
-  let capc = parseInt(cap1.value)
+  let cor1 = document.querySelector("#COR-C")
+  let corc = parseInt(cor1.value)
+
+  let fla2 = document.querySelector("#FLA-C")
+  let flac = parseInt(fla2.value)
+  let cor2 = document.querySelector("#COR-F")
+  let corf = parseInt(cor2.value)
+
+  // ============= TAL x VEL =============
+
+  let vel2 = document.querySelector("#VEL-C")
+  let velc = parseInt(vel2.value)
+  let tal2 = document.querySelector("#TAL-F")
+  let talf = parseInt(tal2.value)
+
+  let vel1 = document.querySelector("#VEL-F")
+  let velf = parseInt(vel1.value)
+  let tal1 = document.querySelector("#TAL-C")
+  let talc = parseInt(tal1.value)
 
   // ============= FIM =============
 
@@ -54,7 +54,7 @@ function apostarCopaBrasil() {
   // let nome = prompt("Informe seu nome: ")
 
   $(document).ready(function () {
-    $('#helloa').append(`<p style="text-align: center;"> ACG 2 X 0 COR <br> COR ${corc} X ${acgf} ACG <br> FOR ${forc} X ${fluf} FLU <br> FLU ${fluc} X ${forf} FOR <br> SAO ${saoc} X ${amgf} AMG <br> AMG ${amgc} X ${saof} SAO <br> FLA 0 X 0 CAP <br> CAP ${capc} X ${flaf} FLA <br> </p>`);
+    $('#helloa').append(`<p style="text-align: center;"> CAP ${capc} X ${estf} EST <br> EST ${estc} X ${capf} CAP <br> CAM ${camc} X ${palf} PAL <br> PAL ${palc} X ${camf} CAM <br> COR ${corc} X ${flaf} FLA <br> FLA ${flac} X ${corf} COR <br> VEL ${velc} X ${talf} TAL <br> TAL ${talc} X ${velf} VEL <br> </p>`);
 
   });
 
@@ -65,129 +65,135 @@ function apostarCopaBrasil() {
 }
 
 function acionarModal() {
-  // ============= COR x ACG =============
-  //  let cor1 = document.querySelector("#COR-F")
-  //  let corf = parseInt(cor1.value)
-  //  let acg1 = document.querySelector("#ACG-C")
-  //  let acgc = parseInt(acg1.value)
+ // ============= EST x CAP =============
+ let est1 = document.querySelector("#EST-F")
+ let estf = parseInt(est1.value)
+ let cap1 = document.querySelector("#CAP-C")
+ let capc = parseInt(cap1.value)
 
-  let cor2 = document.querySelector("#COR-C")
-  let corc = parseInt(cor2.value)
-  let acg2 = document.querySelector("#ACG-F")
-  let acgf = parseInt(acg2.value)
+ let est2 = document.querySelector("#EST-C")
+ let estc = parseInt(est2.value)
+ let cap2 = document.querySelector("#CAP-F")
+ let capf = parseInt(cap2.value)
 
-  // ============= FLU x FOR =============
+ // ============= PAL x CAM =============
 
-  let flu1 = document.querySelector("#FLU-C")
-  let fluc = parseInt(flu1.value)
-  let for1 = document.querySelector("#FOR-F")
-  let forf = parseInt(for1.value)
+ let cam1 = document.querySelector("#CAM-C")
+ let camc = parseInt(cam1.value)
+ let pal1 = document.querySelector("#PAL-F")
+ let palf = parseInt(pal1.value)
 
-  let flu2 = document.querySelector("#FLU-F")
-  let fluf = parseInt(flu2.value)
-  let for2 = document.querySelector("#FOR-C")
-  let forc = parseInt(for2.value)
+ let cam2 = document.querySelector("#CAM-F")
+ let camf = parseInt(cam2.value)
+ let pal2 = document.querySelector("#PAL-C")
+ let palc = parseInt(pal2.value)
 
-  // ============= AMG x SAO =============
+ // ============= FLA x COR =============
 
-  let amg1 = document.querySelector("#AMG-F")
-  let amgf = parseInt(amg1.value)
-  let sao1 = document.querySelector("#SAO-C")
-  let saoc = parseInt(sao1.value)
+ let fla1 = document.querySelector("#FLA-F")
+ let flaf = parseInt(fla1.value)
+ let cor1 = document.querySelector("#COR-C")
+ let corc = parseInt(cor1.value)
 
-  let amg2 = document.querySelector("#AMG-C")
-  let amgc = parseInt(amg2.value)
-  let sao2 = document.querySelector("#SAO-F")
-  let saof = parseInt(sao2.value)
+ let fla2 = document.querySelector("#FLA-C")
+ let flac = parseInt(fla2.value)
+ let cor2 = document.querySelector("#COR-F")
+ let corf = parseInt(cor2.value)
 
-  // ============= FLA x CAP =============
+ // ============= TAL x VEL =============
 
-  // let fla1 = document.querySelector("#FLA-F")
-  // let flaf = parseInt(fla1.value)
-  // let cap1 = document.querySelector("#CAP-C")
-  // let capc = parseInt(cap1.value)
+ let vel2 = document.querySelector("#VEL-C")
+ let velc = parseInt(vel2.value)
+ let tal2 = document.querySelector("#TAL-F")
+ let talf = parseInt(tal2.value)
 
-  let fla2 = document.querySelector("#FLA-C")
-  let flac = parseInt(fla2.value)
-  let cap2 = document.querySelector("#CAP-F")
-  let capf = parseInt(cap2.value)
+ let vel1 = document.querySelector("#VEL-F")
+ let velf = parseInt(vel1.value)
+ let tal1 = document.querySelector("#TAL-C")
+ let talc = parseInt(tal1.value)
+
+ // ============= FIM =============
 
   // ============= FIM =============
 
-  if (isNaN(corc) || isNaN(acgf) ||
-    isNaN(forc) || isNaN(fluf) || isNaN(fluc) || isNaN(forf) ||
-    isNaN(saoc) || isNaN(amgf) || isNaN(amgc) || isNaN(saof) ||
-    isNaN(capc) || isNaN(flaf)) {
+  if (isNaN(capc) || isNaN(estf) || isNaN(estc) || isNaN(capf) ||
+    isNaN(camc) || isNaN(palf) || isNaN(palc) || isNaN(camf) ||
+    isNaN(corc) || isNaN(flaf) || isNaN(flac) || isNaN(corf) ||
+    isNaN(velc) || isNaN(talf) || isNaN(talc) || isNaN(velf)) {
     alert("Favor preencher todos os resultados!")
   } else {
-    apostarCopaBrasil()
+    apostarLibertadores()
   }
 }
 
 
 function whatsapp() {
   // $(location).attr('href', "https://wa.me/55019992481225")
-  // ============= COR x ACG =============
-  // let cor1 = document.querySelector("#COR-F")
-  // let corf = parseInt(cor1.value)
-  // let acg1 = document.querySelector("#ACG-C")
-  // let acgc = parseInt(acg1.value)
-
-  let cor2 = document.querySelector("#COR-C")
-  let corc = parseInt(cor2.value)
-  let acg2 = document.querySelector("#ACG-F")
-  let acgf = parseInt(acg2.value)
-
-  // ============= FLU x FOR =============
-
-  let flu1 = document.querySelector("#FLU-C")
-  let fluc = parseInt(flu1.value)
-  let for1 = document.querySelector("#FOR-F")
-  let forf = parseInt(for1.value)
-
-  let flu2 = document.querySelector("#FLU-F")
-  let fluf = parseInt(flu2.value)
-  let for2 = document.querySelector("#FOR-C")
-  let forc = parseInt(for2.value)
-
-  // ============= AMG x SAO =============
-
-  let amg1 = document.querySelector("#AMG-F")
-  let amgf = parseInt(amg1.value)
-  let sao1 = document.querySelector("#SAO-C")
-  let saoc = parseInt(sao1.value)
-
-  let amg2 = document.querySelector("#AMG-C")
-  let amgc = parseInt(amg2.value)
-  let sao2 = document.querySelector("#SAO-F")
-  let saof = parseInt(sao2.value)
-
-  // ============= FLA x CAP =============
-
-  //  let fla2 = document.querySelector("#FLA-C")
-  //  let flac = parseInt(fla2.value)
-  //  let cap2 = document.querySelector("#CAP-F")
-  //  let capf = parseInt(cap2.value)
-
-  let fla1 = document.querySelector("#FLA-F")
-  let flaf = parseInt(fla1.value)
+  // ============= EST x CAP =============
+  let est1 = document.querySelector("#EST-F")
+  let estf = parseInt(est1.value)
   let cap1 = document.querySelector("#CAP-C")
   let capc = parseInt(cap1.value)
 
-  // ================= FIM =================
+  let est2 = document.querySelector("#EST-C")
+  let estc = parseInt(est2.value)
+  let cap2 = document.querySelector("#CAP-F")
+  let capf = parseInt(cap2.value)
 
-  alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \n Valor: R$ 5,00")
-  let s = `APOSTA *FUTBR* - COPA DO BRASIL 2022%0A%0AACG 2 X 0 COR%0ACOR ${corc} X ${acgf} ACG%0AFOR ${forc} X ${fluf} FLU%0AFLU ${fluc} X ${forf} FOR%0ASAO ${saoc} X ${amgf} AMG%0AAMG ${amgc} X ${saof} SAO%0AFLA 0 X 0 CAP%0ACAP ${capc} X ${flaf} FLA`
+  // ============= PAL x CAM =============
+
+  let cam1 = document.querySelector("#CAM-C")
+  let camc = parseInt(cam1.value)
+  let pal1 = document.querySelector("#PAL-F")
+  let palf = parseInt(pal1.value)
+
+  let cam2 = document.querySelector("#CAM-F")
+  let camf = parseInt(cam2.value)
+  let pal2 = document.querySelector("#PAL-C")
+  let palc = parseInt(pal2.value)
+
+  // ============= FLA x COR =============
+
+  let fla1 = document.querySelector("#FLA-F")
+  let flaf = parseInt(fla1.value)
+  let cor1 = document.querySelector("#COR-C")
+  let corc = parseInt(cor1.value)
+
+  let fla2 = document.querySelector("#FLA-C")
+  let flac = parseInt(fla2.value)
+  let cor2 = document.querySelector("#COR-F")
+  let corf = parseInt(cor2.value)
+
+  // ============= TAL x VEL =============
+
+  let vel2 = document.querySelector("#VEL-C")
+  let velc = parseInt(vel2.value)
+  let tal2 = document.querySelector("#TAL-F")
+  let talf = parseInt(tal2.value)
+
+  let vel1 = document.querySelector("#VEL-F")
+  let velf = parseInt(vel1.value)
+  let tal1 = document.querySelector("#TAL-C")
+  let talc = parseInt(tal1.value)
+
+  // ============= FIM =============
+  
+  alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \nValor: R$ 5,00")
+  let s = `APOSTA *FUTBR* - COPA LIBERTADORES 2022%0A%0ACAP ${capc} X ${estf} EST%0AEST ${estc} X ${capf} CAP%0ACAM ${camc} X ${palf} PAL%0APAL ${palc} X ${camf} CAM%0ACOR ${corc} X ${flaf} FLA%0AFLA ${flac} X ${corf} COR%0AVEL ${velc} X ${talf} TAL%0ATAL ${talc} X ${velf} VEL`
   // window.open(`https://api.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
   // window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
   // window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
   window.open(`https://wa.me/send?phone=55019992481225&text=${s}`)
 }
 
-function paginaBrasil() {
-  $(location).attr('href', '../html/copaBrasil.html')
+function paginaLiberta() {
+  $(location).attr('href', '../html/libertadores.html')
 }
 
 function popUP() {
-  alert("Em construção...")
+  alert("Em Breve...")
+}
+
+function popUP2() {
+  alert("Encerrado!")
 }

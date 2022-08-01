@@ -35,10 +35,13 @@
                 <div id="myNav" class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="copaBrasil.html">Copa do Brasil</a></li>
+                        <li class="nav-item"><a onclick="popUP2()" class="nav-link" href="#">Copa do Brasil</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="copaBrasil.html">Copa do Brasil</a></li> -->
                         <!-- <li class="nav-item"><a class="nav-link" href="libertadores.html">Libertadores</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="sulAmericana.html">Sul-Americana</a></li>
-                        <li class="nav-item"><a class="nav-link" href="copaMundo.html">Copa do Mundo</a></li>
+                        <li class="nav-item"><a onclick="popUP()" class="nav-link" href="#">Sul-Americana</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="sulAmericana.html">Sul-Americana</a></li> -->
+                        <li class="nav-item"><a onclick="popUP()" class="nav-link" href="#">Copa do Mundo</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="copaMundo.html">Copa do Mundo</a></li> -->
                     </ul>
                 </div>
             </nav>
@@ -148,22 +151,18 @@
                             <img class="logos" width="160px" src="../images/brasao/VEL.png" alt="">
                         </div>
                         
-                        <!-- <button type="button" class="btn btn-success btnApostar" data-toggle="modal"
-                            data-target="#meuModal">
-                            Apostar
-                        </button> -->
-                        <button onclick="acionarModal()" class="btn btn-success btnApostar" data-toggle="modal" data-target="#meuModal">
+                        <button onclick="acionarModal()" class="btn btn-success btnApostar" data-toggle="modal">
                             Apostar    
                         </button>
 
-                        <div class="modal" id="meuModal">
+                        <div class="modal" tabindex="-1" role="dialog" id="meuModal">
                             <div class="modal-dialog modal-lg modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h1>Sua Aposta</h1>                
                                     </div>
-                                    <div class="modal-body display-7">
-                                        <p style="text-align: center;">
+                                    <div class="modal-body display-7" id="helloa">
+                                        <!-- <p style="text-align: center;">
                                             CAP X EST <br>
                                             EST X CAP <br>
                                             CAM X PAL <br>
@@ -172,35 +171,40 @@
                                             FLA X COR <br>
                                             VEL X TAL <br>
                                             TAL X VEL <br>
-                                        </p>
+                                        </p> -->
                                     </div>
                                     <div class="modal-footer">
-                                        <button class="btn btn-primary">
+                                        <button onclick="whatsapp()" class="btn btn-primary">
                                             Confirmar
                                         </button>
+                                        <button onclick="paginaLiberta()" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-
                     </div>
                 </div>
+
+                <!-- ================== TAB APOSTAS VÁLIDAS ================== -->
                 <div id="apostasValidas" class="tab-pane fade">
                     <h3>Apostas Válidas</h3>
                 </div>
+
+                <!-- ==================  TAB CLASSIFICAÇÃO  ================== -->
                 <div id="classificacao" class="tab-pane fade">
                     <h3>Classificação</h3>
                 </div>
+
+                <!-- ==================      TAB REGRAS     ================== -->
                 <div id="regras" class="tab-pane fade">
                     <div id="conteudo">
                         <h3>Regras do bolão</h3>
 
                         <ol id="listaLiberta">
-                            <li>Bolão começa a partir das Quartas de Finais da Libertadores 2022.</li>
+                            <li>Bolão começa a partir das Quartas de Final da Libertadores 2022.</li>
                             <li>Palpite será validado após a confirmação do pgto.</li>
-                            <li>O palpite precisa ser preenchido antes do início de cada fazer.</li>
-                            <li>Cada fase deve ser colocado o seu palpite, caso contrário o placar será automaticamente
+                            <li>O palpite precisa ser preenchido antes do início de cada fase.</li>
+                            <li>Cada fase deve ser colocado um palpite, caso contrário o placar será automaticamente
                                 0 x 0.</li>
                             <li>O Valor de cada aposta é de R$ 5,00.</li>
                             <li>O campeonato será de pontos corridos. Quem somar mais pontos será o Vencedor</li>
@@ -231,7 +235,7 @@
 
     <!-- ================================== SECTION HOME ================================== -->
 
-    <script src="../javascript/acao.js"></script>
+    <script src="../javascript/acaoLiberta.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

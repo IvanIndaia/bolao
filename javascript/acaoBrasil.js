@@ -184,7 +184,3 @@ function whatsapp() {
 function paginaBrasil() {
   $(location).attr('href', '../html/copaBrasil.html')
 }
-
-function popUP() {
-  alert("Em construção...")
-}

@@ -1,3 +1,7 @@
 function popUP() {
-  alert("Em construção...")
+  alert("Em Breve...")
+}
+
+function popUP2() {
+  alert("Encerrado!")
 }
