@@ -183,7 +183,7 @@ function whatsapp() {
   // window.open(`https://api.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
   // window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
   // window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
-  window.open(`https://wa.me/55019992481225&text=${s}`)
+  window.open(`https://wa.me/5519992481225?text=${s}`)
 }
 
 function paginaLiberta() {
