@@ -16,7 +16,7 @@ h3 {
     text-align: center;
     margin-top: 7px; 
     margin-bottom: 5px; 
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .imag {
@@ -35,6 +35,13 @@ h3 {
     flex-direction: column;
     align-items: center;
     overflow: auto;
+}
+
+.grid>h6 {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 3px;
 }
 
 .grid>div {
