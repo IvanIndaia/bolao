@@ -99,7 +99,6 @@ section {
     padding: 10px;
 }
 
-#home>#hdiv>a>.hdiv2 {
 #home>#hdiv>a>.hdiv22 {
     /* border: 1px solid black; */
     background-image: linear-gradient(var(--cor3), var(--cor2));
