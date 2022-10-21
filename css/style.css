@@ -100,6 +100,7 @@ section {
 }
 
 #home>#hdiv>a>.hdiv2 {
+#home>#hdiv>a>.hdiv22 {
     /* border: 1px solid black; */
     background-image: linear-gradient(var(--cor3), var(--cor2));
     color: var(--cor5);
@@ -113,11 +114,29 @@ section {
     font-family: var(--font05);
 }
 
+#home>#hdiv>a>.hdiv2 {
+    /* border: 1px solid black; */
+    background-image: linear-gradient(var(--cor1), var(--cor5));
+    color: var(--cor5);
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.449);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    min-width: 230px;
+    min-height: 90px;
+    font-family: var(--font05);
+}
+
+#home>#hdiv>a>.hdiv22>h4 {
+    font-size: 25px;
+}
+
 #home>#hdiv>a>.hdiv2>h4 {
     font-size: 25px;
 }
 
-#home>#hdiv>a>.hdiv2:hover {
+#home>#hdiv>a>.hdiv22:hover {
     cursor: pointer;
     transition: 1s;
     background-image: radial-gradient(var(--cor5), var(--cor4));
