@@ -62,7 +62,7 @@ function apostarLibertadores() {
 
   if (fla == cap) {
     $(document).ready(function () {
-      $('#helloa').append(`<p style="text-align: center;"> *FLA* ${fla} X ${cap} *CAP* <br>*Campeão:* ${camp} </p>`);
+      $('#helloa').append(`<p style="text-align: center;"> FLA ${fla} X ${cap} CAP <br>Campeão: ${camp} </p>`);
     });
   } else {
     $(document).ready(function () {
@@ -174,11 +174,11 @@ function whatsapp() {
 
   if (fla == cap) {
     alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \nValor: R$ 5,00")
-    let text = `APOSTA *FUTBR* - FINAL DA COPA LIBERTADORES 2022%0A%0AFLA ${fla} X ${cap} CAP%0A Campeão: ${camp}`
+    let text = `APOSTA *FUTBR* - FINAL DA COPA LIBERTADORES 2022%0A%0A*FLA* ${fla} X ${cap} *CAP*%0A *Campeão:* ${camp}`
     window.open(`https://wa.me/5519992481225?text=${text}`)
   }
   alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \nValor: R$ 5,00")
-  let text = `APOSTA *FUTBR* - FINAL DA COPA LIBERTADORES 2022%0A%0AFLA ${fla} X ${cap} CAP`
+  let text = `APOSTA *FUTBR* - FINAL DA COPA LIBERTADORES 2022%0A%0A*FLA* ${fla} X ${cap} *CAP*`
   // window.open(`https://api.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
   // window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
   // window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
