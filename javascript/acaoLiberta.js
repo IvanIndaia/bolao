@@ -62,7 +62,7 @@ function apostarLibertadores() {
 
   if (fla == cap) {
     $(document).ready(function () {
-      $('#helloa').append(`<p style="text-align: center;"> FLA ${fla} X ${cap} CAP <br> Campeão: ${camp} </p>`);
+      $('#helloa').append(`<p style="text-align: center;"> *FLA* ${fla} X ${cap} *CAP* <br>*Campeão:* ${camp} </p>`);
     });
   } else {
     $(document).ready(function () {
