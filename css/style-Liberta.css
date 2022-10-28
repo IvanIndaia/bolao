@@ -108,7 +108,7 @@ white-space: nowrap;
 #apostValidas {
     border-collapse: collapse;
     text-align: center;
-    width: 70%;
+    width: 40%;
 }
 
 
@@ -160,7 +160,7 @@ tbody>tr:nth-child(odd) {
     }
 
     #apostValidas {
-        width: 90%;
+        width: 50%;
     }
 }
 
