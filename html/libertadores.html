@@ -211,11 +211,14 @@
                                         <h1>Qual time será Campeão?</h1>
                                     </div>
                                     <div class="modal-body display-7">
-                                        <input onchange="habilitarBotao()" type="radio" name="campeao" id="fla" value="Flamengo"><label for="fla">  Flamengo</label> <br>
-                                        <input onchange="habilitarBotao()" type="radio" name="campeao" id="cap" value="Athlético-PR"><label for="cap">  Athlético-PR</label>
+                                        <input onchange="habilitarBotao()" type="radio" name="campeao" id="fla"
+                                            value="Flamengo"><label for="fla"> Flamengo</label> <br>
+                                        <input onchange="habilitarBotao()" type="radio" name="campeao" id="cap"
+                                            value="Athlético-PR"><label for="cap"> Athlético-PR</label>
                                     </div>
                                     <div class="modal-footer">
-                                        <button style="visibility: hidden;" id="botaoConf" onclick="capturaCampeao()" class="btn btn-primary">
+                                        <button style="visibility: hidden;" id="botaoConf" onclick="capturaCampeao()"
+                                            class="btn btn-primary">
                                             Avançar
                                         </button>
                                         <button onclick="paginaLiberta()" type="button" class="btn btn-secondary"
@@ -227,52 +230,57 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- ================== TAB APOSTAS VÁLIDAS ================== -->
-                    <div id="apostasValidas" class="tab-pane fade">
-                        <h3>Apostas Válidas</h3>
+                <!-- ================== TAB APOSTAS VÁLIDAS ================== -->
+                <div id="apostasValidas" class="tab-pane fade">
+                    <h3>Apostas Válidas</h3>
+                </div>
+
+                <!-- ==================  TAB CLASSIFICAÇÃO  ================== -->
+                <div id="classificacao" class="tab-pane fade">
+                    <h3>Classificação</h3>
+                </div>
+
+                <!-- ==================      TAB REGRAS     ================== -->
+                <div id="regras" class="tab-pane fade">
+                    <div id="conteudo">
+                        <h3>Regras do bolão</h3>
+
+                        <ol id="listaLiberta">
+                            <li>Bolão para Final da Copa Libertadores 2022.</li>
+                            <li>Palpite será validado após a confirmação do pgto.</li>
+                            <li>O palpite precisa ser preenchido antes do início do jogo da Final.</li>
+                            <!-- <li>Cada fase deve ser colocado um palpite, caso contrário o placar será automaticamente
+                                0 x 0.</li> -->
+                            <li>O Valor de cada aposta é de R$ 5,00.</li>
+                            <li>Quem acertar o placar será o vencedor</li>
+                            <li>Se tiver mais de um ganhador, o premio será dividido</li>
+                            <li>Se você optar pelo empate, terá que escolher o Campeão, que servirá como critério de desempate caso tenha 2 vencedores.</li>
+                            <li>E se tiver mais de um vencedor pelo placar de empate e acerto no campeão, dividirá o prêmio</li>
+                            <!-- <li>O campeonato será de pontos corridos. Quem somar mais pontos será o Vencedor</li> -->
+                            <!-- <li><strong>Pontuação:</strong>
+                                <ul>
+                                    <li>Acertar o placar: 3 pontos</li>
+                                    <li>Acertar Vencedor/Empate: 1 ponto</li>
+                                    <li>Acertar quantidade de gols de um dos times: 0,5 ponto</li>
+                                </ul>
+                            </li> -->
+                            <!-- <li><strong>Premiação:</strong>
+                                <ul>
+                                    <li>1º Colocado: 60% do valor arrecadado</li>
+                                    <li>2º Colocado: 25% do valor arrecadado</li>
+                                    <li>3º Colocado: 15% do valor arrecadado</li>
+                                </ul> -->
+                        </ol>
                     </div>
-
-                    <!-- ==================  TAB CLASSIFICAÇÃO  ================== -->
-                    <div id="classificacao" class="tab-pane fade">
-                        <h3>Classificação</h3>
-                    </div>
-
-                    <!-- ==================      TAB REGRAS     ================== -->
-                    <div id="regras" class="tab-pane fade">
-                        <div id="conteudo">
-                            <h3>Regras do bolão</h3>
-
-                            <ol id="listaLiberta">
-                                <li>Bolão começa a partir das Quartas de Final da Libertadores 2022.</li>
-                                <li>Palpite será validado após a confirmação do pgto.</li>
-                                <li>O palpite precisa ser preenchido antes do início de cada fase.</li>
-                                <li>Cada fase deve ser colocado um palpite, caso contrário o placar será automaticamente
-                                    0 x 0.</li>
-                                <li>O Valor de cada aposta é de R$ 5,00.</li>
-                                <li>O campeonato será de pontos corridos. Quem somar mais pontos será o Vencedor</li>
-                                <li><strong>Pontuação:</strong>
-                                    <ul>
-                                        <li>Acertar o placar: 3 pontos</li>
-                                        <li>Acertar Vencedor/Empate: 1 ponto</li>
-                                        <li>Acertar quantidade de gols de um dos times: 0,5 ponto</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Premiação:</strong>
-                                    <ul>
-                                        <li>1º Colocado: 60% do valor arrecadado</li>
-                                        <li>2º Colocado: 25% do valor arrecadado</li>
-                                        <li>3º Colocado: 15% do valor arrecadado</li>
-                                    </ul>
-                            </ol>
-                        </div>
-                    </div>
-                    <!-- <div id="outros" class="tab-pane fade">
+                </div>
+                <!-- <div id="outros" class="tab-pane fade">
                     <h1>Outros</h1>
                     <img src="images/Interview.png" alt="">
                 </div> -->
-                </div>
             </div>
+        </div>
 
     </section>
 
