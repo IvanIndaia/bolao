@@ -45,7 +45,7 @@ function habilitarBotao() {
 
   var x = document.querySelectorAll('input')
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 4; i++) {
     if (x[i].checked) {
       console.log(`Flegado`)
       let stg = $('#botaoConf')
@@ -67,17 +67,23 @@ function capturaCampeao() {
 
   var x = document.querySelectorAll('input')
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 4; i++) {
     if (x[i].checked) {
       console.log(`Flegado: ${x[i].value}`)
       camp = x[i].value
     }
   }
 
-  let stg = $('#meuModalB')
+  let stg = $('#botaoConf')
   stg.css({
     "visibility": "hidden"
   })
+
+  let stgb = $('#meuModalB')
+  stgb.css({
+    "visibility": "hidden"
+  })
+
   apostarLibertadores()
 }
 
@@ -125,7 +131,7 @@ function whatsapp() {
 
   if (fla == cap) {
     alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \nValor: R$ 5,00")
-    let text = `APOSTA *FUTBR* - FINAL DA COPA LIBERTADORES 2022%0A%0A*FLA* ${fla} X ${cap} *CAP*%0A *Campeão:* ${camp}`
+    let text = `APOSTA *FUTBR* - FINAL DA COPA LIBERTADORES 2022%0A%0A*FLA* ${fla} X ${cap} *CAP*%0A*Campeão:* ${camp}`
     window.open(`https://wa.me/5519992481225?text=${text}`)
     paginaLiberta()
   }
