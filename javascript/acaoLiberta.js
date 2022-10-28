@@ -136,7 +136,7 @@ function whatsapp() {
     paginaLiberta()
   }
   alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \nValor: R$ 5,00")
-  let text = `APOSTA *FUTBR* - FINAL DA COPA LIBERTADORES 2022%0A%0A*FLA* ${fla} X ${cap} *CAP*`
+  let text = `APOSTA *FUTBR* - FINAL DA COPA LIBERTADORES 2022%0A%0A*FLA* ${fla} X ${cap} *CAP*%0APix: 19992481225`
 
   window.open(`https://wa.me/5519992481225?text=${text}`)
   paginaLiberta()
