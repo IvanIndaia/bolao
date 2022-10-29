@@ -137,6 +137,10 @@ th {
     text-align: center;
 }
 
+tbody > .derrota > td{
+    background-color: rgba(255, 0, 0, 0.473);
+}
+
 tbody>tr:nth-child(even) {
     background-color: rgba(202, 201, 202, 0.555);
 }
@@ -144,6 +148,8 @@ tbody>tr:nth-child(even) {
 tbody>tr:nth-child(odd) {
     background-color: white;
 }
+
+
 /* ===================== MEDIA 800 ===================== */
 @media screen and (max-width: 800px) {
     .imag {
