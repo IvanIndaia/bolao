@@ -46,7 +46,7 @@ h3 {
 }
 
 .grid>div {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     /* width: 70%; */
     /* text-align: center; */
@@ -88,9 +88,8 @@ h3 {
 
 /* ============== APOSTAS VÁLIDAS ==============*/
 #apostasValidas {
-    display: flex;
+    /* display: flex; */
     align-items: center;
-    
     flex-direction: column;
 }
 
@@ -137,9 +136,9 @@ th {
     text-align: center;
 }
 
-tbody > .derrota > td{
+/* tbody > .derrota > td{
     background-color: rgba(255, 0, 0, 0.473);
-}
+} */
 
 tbody > .vitoria > td{
     background-color: rgba(0, 255, 60, 0.473);
