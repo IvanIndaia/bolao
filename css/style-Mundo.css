@@ -1,22 +1,36 @@
 @charset "UTF-8";
 @import "style.css";
 
+
+/* ============== APOSTAR ==============*/
 .grup {
     width: 100px;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grup div {
+    display: flex;
+    flex-direction: row;
 }
 
 #grupoA {
-    display: flex;
-    flex-direction: column;
+    /* display: inline; */
 }
 
-#grupoA>div>h2 {
+.tab-content div h2{
     text-align: center;
 }
 
+#grupoA>div>h2 {
+    
+}
 
-/* ============== APOSTAR ==============*/
+.logos {
+    width: 50px;
+}
 
 h3 {
     text-align: center;
@@ -88,44 +102,4 @@ h3 {
 .modal {
     visibility: hidden;
 }
-/* ===================== MEDIA 800 ===================== */
-@media screen and (max-width: 800px) {
-    .imag {
-        /* border: 1px solid black; */
-        width: 50%;
-    }
 
-    .logos {
-        width: 130px;
-    }
-
-    .grid>div {
-        width: 75%;
-        /* text-align: center; */
-    }
-
-    .btnApostar {
-        width: 75%;
-    }
-}
-
-/* ===================== MEDIA 470 ===================== */
-@media screen and (max-width: 470px) {
-    .imag {
-        /* border: 1px solid black; */
-        width: 75%;
-    }
-
-    .grid>div {
-        width: 95%;
-    }
-
-    .btnApostar {
-        width: 95%;
-    }
-
-    .logos {
-        width: 100px;
-    }
-    
-}
