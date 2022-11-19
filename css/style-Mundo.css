@@ -16,17 +16,24 @@
     flex-direction: row;
 }
 
+.grup p {
+    color: rgb(7, 15, 153);
+    margin-top: 10px;
+    width: 60px;
+    text-align: center;
+    /* box-shadow: 1px 3px 9px rgba(255, 0, 0, 0.545); */
+    text-shadow: 1px 1px 7px blue;
+}
+
 #grupoA {
     /* display: inline; */
 }
 
-.tab-content div h2{
+.tab-content div h2 {
     text-align: center;
 }
 
-#grupoA>div>h2 {
-    
-}
+#grupoA>div>h2 {}
 
 .logos {
     width: 50px;
@@ -34,8 +41,8 @@
 
 h3 {
     text-align: center;
-    margin-top: 7px; 
-    margin-bottom: 5px; 
+    margin-top: 7px;
+    margin-bottom: 5px;
     padding-top: 10px;
 }
 
@@ -57,7 +64,7 @@ h3 {
     overflow: auto;
 }
 
-.grid>h6 {
+.grid h6 {
     font-size: 12px;
     text-align: center;
     margin-top: 12px;
@@ -102,4 +109,3 @@ h3 {
 .modal {
     visibility: hidden;
 }
-
