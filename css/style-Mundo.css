@@ -107,4 +107,6 @@ h3 {
 
 .modal {
     visibility: hidden;
+    overflow: hidden;
+    background-color: rgba(69, 69, 67, 0.847);
 }

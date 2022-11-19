@@ -31,7 +31,7 @@
                         <a href="../index.html"><img width="35px" src="../icon/favicon.ico"></a>
                     </div>
                 </div>
-                <div class="navbar-brand"><img src="images/favicon.ico" alt=""> </div>
+                <!-- <div class="navbar-brand"><img src="" alt=""> </div> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -91,7 +91,7 @@
                                             <p>Catar</p>
                                             <img class="logos" src="../images/mundo/catar.png" alt="">
                                             <div class="x">
-                                                <input id="QAT-1" class="placar" type="tel">
+                                                <input id="CAT-1" class="placar" type="tel">
                                                 <h3>X</h3>
                                                 <input id="EQU-1" class="placar" type="tel">
                                             </div>
@@ -119,7 +119,7 @@
                                             <p>Catar</p>
                                             <img class="logos" src="../images/mundo/catar.png" alt="">
                                             <div class="x">
-                                                <input id="QAT-2" class="placar" type="tel">
+                                                <input id="CAT-2" class="placar" type="tel">
                                                 <h3>X</h3>
                                                 <input id="SEN-2" class="placar" type="tel">
                                             </div>
@@ -149,7 +149,7 @@
                                             <div class="x">
                                                 <input id="HOL-3" class="placar" type="tel">
                                                 <h3>X</h3>
-                                                <input id="QAT-3" class="placar" type="tel">
+                                                <input id="CAT-3" class="placar" type="tel">
                                             </div>
                                             <img class="logos" src="../images/mundo/catar.png" alt="">
                                             <p>Catar</p>
@@ -278,7 +278,7 @@
                                                 <input id="ARA-1" class="placar" type="tel">
                                             </div>
                                             <img class="logos" src="../images/mundo/arabia.png" alt="">
-                                            <p>Arabia</p>
+                                            <p>Arábia</p>
                                         </div>
                                     </div>
                                     <div class="grup">
@@ -292,13 +292,13 @@
                                                 <input id="POL-1" class="placar" type="tel">
                                             </div>
                                             <img class="logos" src="../images/mundo/polonia.png" alt="">
-                                            <p>Polonia</p>
+                                            <p>Polônia</p>
                                         </div>
                                     </div>
                                     <div class="grup">
                                         <h6>SÁB 26/11/2022 CIDADE DA EDUCAÇÃO 10:00</h6>
                                         <div>
-                                            <p>Polonia</p>
+                                            <p>Polônia</p>
                                             <img class="logos" src="../images/mundo/polonia.png" alt="">
                                             <div class="x">
                                                 <input id="POL-2" class="placar" type="tel">
@@ -306,7 +306,7 @@
                                                 <input id="ARA-2" class="placar" type="tel">
                                             </div>
                                             <img class="logos" src="../images/mundo/arabia.png" alt="">
-                                            <p>Arabia</p>
+                                            <p>Arábia</p>
                                         </div>
                                     </div>
                                     <div class="grup">
@@ -326,7 +326,7 @@
                                     <div class="grup">
                                         <h6>QUA 30/11/2022 ESTÁDIO 974 16:00</h6>
                                         <div>
-                                            <p>Polonia</p>
+                                            <p>Polônia</p>
                                             <img class="logos" src="../images/mundo/polonia.png" alt="">
                                             <div class="x">
                                                 <input id="POL-3" class="placar" type="tel">
@@ -340,7 +340,7 @@
                                     <div class="grup">
                                         <h6>QUA 30/11/2022 LUSAIL 16:00</h6>
                                         <div>
-                                            <p>Arabia</p>
+                                            <p>Arábia</p>
                                             <img class="logos" src="../images/mundo/arabia.png" alt="">
                                             <div class="x">
                                                 <input id="ARA-3" class="placar" type="tel">
@@ -813,11 +813,11 @@
                         COPA DO MUNDO
                     ==================================================================================================-->
 
-                    <button onclick="acionarModal()" class="btn btn-success btnApostar" data-toggle="modal">
+                    <button onclick="acionarModal()" type="button" class="btn btn-success btnApostar" data-toggle="modal">
                         Apostar
                     </button>
 
-                    <div class="modal" tabindex="-1" role="dialog" id="meuModalA">
+                    <div class="modal" tabindex="-1" role="dialog" id="meuModal">
                         <div class="modal-dialog modal-lg modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -832,7 +832,7 @@
                                     <button onclick="whatsapp()" class="btn btn-primary">
                                         Confirmar
                                     </button>
-                                    <button onclick="paginaLiberta()" type="button" class="btn btn-secondary"
+                                    <button onclick="paginaCopaDoMundo()" type="button" class="btn btn-secondary"
                                         data-dismiss="modal">
                                         Cancelar
                                     </button>
@@ -840,32 +840,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal" tabindex="-1" role="dialog" id="meuModalB">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1>Qual time será Campeão?</h1>
-                                </div>
-                                <div class="modal-body display-7">
-                                    <input onchange="habilitarBotao()" type="radio" name="campeao" id="fla"
-                                        value="Flamengo"><label for="fla"> Flamengo</label> <br>
-                                    <input onchange="habilitarBotao()" type="radio" name="campeao" id="cap"
-                                        value="Athlético-PR"><label for="cap"> Athlético-PR</label>
-                                </div>
-                                <div class="modal-footer">
-                                    <button style="visibility: hidden;" id="botaoConf" onclick="capturaCampeao()"
-                                        class="btn btn-primary">
-                                        Avançar
-                                    </button>
-                                    <button onclick="paginaLiberta()" type="button" class="btn btn-secondary"
-                                        data-dismiss="modal">
-                                        Cancelar
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                  <!-- <button onclick="vaiDarCerto()">
+                    Vao Rolar
+                  </button> -->
                 </div>
                 <div id="apostasValidas" class="tab-pane fade">
                     <h1>Apostas Válidas</h1>
@@ -877,26 +854,58 @@
                     <div id="conteudo">
                         <h3>Regras do bolão</h3>
 
-                        <ol id="listaLiberta">
-                            <li>Bolão começa a partir das Quartas de Final da Libertadores 2022.</li>
-                            <li>Palpite será validado após a confirmação do pgto.</li>
-                            <li>O palpite precisa ser preenchido antes do início de cada fase.</li>
+                        <ol id="listaMundo">
+                            <li>Bolão da COPA DO MUNDO CATAR-2022.</li>
+                            <li>O palpite será validado após a confirmação do pgto.</li>
+                            <li>O palpite precisa ser preenchido até dia 20/11/2022 13h00.</li>
                             <li>Cada fase deve ser colocado um palpite, caso contrário o placar será automaticamente
                                 0 x 0.</li>
-                            <li>O Valor de cada aposta é de R$ 5,00.</li>
+                            <li>O Valor de cada aposta é de R$ 10,00.</li>
                             <li>O campeonato será de pontos corridos. Quem somar mais pontos será o Vencedor</li>
-                            <li><strong>Pontuação:</strong>
+                            <li><b>Pontuação:</b>
                                 <ul>
-                                    <li>Acertar o placar: 3 pontos</li>
-                                    <li>Acertar Vencedor/Empate: 1 ponto</li>
-                                    <li>Acertar quantidade de gols de um dos times: 0,5 ponto</li>
+                                    <li>Placar Exato: <b>25 pontos</b></li>
+                                    <ul>
+                                        <li>
+                                            <u>Exemplo:</u> Você palpitou 0x0 e a partica acaba 0x0
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    <li>Acertar o Vencedor/Empate: <b>15 pontos</b></li>
+                                    <ul>
+                                        <li>
+                                            <u>Exemplo</u>: Você palpitou 3x0 e a partica acaba 2x1
+                                        </li>
+                                        <li>
+                                            <u>Exemplo2</u>: Você palpitou 0x0 e a partica acaba 2x2
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    <li>Acertar gol(s) de um dos Times: <b>5 pontos</b></li>
+                                    <ul>
+                                        <li>
+                                            <u>Exemplo</u>: Você palpitou 0x0 e a partica acaba 0x3
+                                        </li>
+                                        <li>
+                                            <u>Exemplo2</u>: Você palpitou 4x1 e a partica acaba 1x1
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    <li>Acertar o Campeão: <b>100 pontos</b></li>
+                                    <ul>
+                                        <li>
+                                            <u>Exemplo</u>: Você palpitou Brasil e Argentina e a Copa foi vencida pelo Brasil.
+                                        </li>
+                                    </ul>
                                 </ul>
                             </li>
-                            <li><strong>Premiação:</strong>
+                            <br>
+                            <li><b>Premiação:</b>
                                 <ul>
-                                    <li>1º Colocado: 60% do valor arrecadado</li>
-                                    <li>2º Colocado: 25% do valor arrecadado</li>
-                                    <li>3º Colocado: 15% do valor arrecadado</li>
+                                    <li>Campeão da fase de Grupos Receberá R$ 50,00</li>
+                                    <li>1º Colocado: 50% do valor arrecadado</li>
+                                    <li>2º Colocado: 30% do valor arrecadado</li>
+                                    <li>3º Colocado: 20% do valor arrecadado</li>
                                 </ul>
                         </ol>
                     </div>
@@ -907,8 +916,8 @@
 
     <!-- ================================== SECTION HOME ================================== -->
 
-    <script src="javascript/javaScript.js"></script>
-    <script src="../javascript/acao.js"></script>
+    <script src="../javascript/acaoMundo.js"></script>
+    <script src="../script.js"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -1,39 +1,205 @@
 
 function acionarModal() {
 
-  let fla1 = document.querySelector("#FLA-C")
-  let fla = parseInt(fla1.value)
+  let inps = document.querySelectorAll('input')
+  preencherTodos = false
 
-  let cap1 = document.querySelector("#CAP-F")
-  let cap = parseInt(cap1.value)
+  inps.forEach(e => {
+    // console.log(e.id + ' -> ' + e.value)
+    if (isNaN(parseInt(e.value))) {
+      preencherTodos = false
+    } else {
+      preencherTodos = true
+    }
+  });
 
-
-
-  if (isNaN(fla) || isNaN(cap)) {
-    alert("Favor Inserir um placar válido!")
-  } else if (fla == cap) {
-    empateLiberta()
-    // apostarLibertadores()
-
+  if (preencherTodos) {
+    alert("OK")
   } else {
-    apostarLibertadores()
+    alert("Preencher todos os jogos com placares VÁLIDOS!")
   }
+
+  apostarCopaDoMundo()
 }
 
-  // ================= FIM =================
+function apostarCopaDoMundo() {
 
-  alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \n Valor: R$ 5,00")
-  let s = `APOSTA *FUTBR* - COPA DO BRASIL 2022%0A%0AACG 2 X 0 COR%0ACOR ${corc} X ${acgf} ACG%0AFOR ${forc} X ${fluf} FLU%0AFLU ${fluc} X ${forf} FOR%0ASAO ${saoc} X ${amgf} AMG%0AAMG ${amgc} X ${saof} SAO%0AFLA 0 X 0 CAP%0ACAP ${capc} X ${flaf} FLA`
-  // window.open(`https://api.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
-  // window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
-  // window.open(`https://web.whatsapp.com/send?phone=5519992481225&text=${s}`, "blank");
-  window.open(`https://wa.me/send?phone=55019992481225&text=${s}`)
+  let inps = document.querySelectorAll('input')
+
+  let sou = document.querySelectorAll('button')[1]
+  sou.setAttribute("data-target", "#meuModal")
+  // sou.forEach(e => {
+  //   console.log(e)
+  // });
+
+  // console.log(sou)
+
+  $(document).ready(function () {
+
+    let inps1 = document.querySelectorAll('input')
+    const plac = []
+
+    for (let i = 0; i < inps1.length; i++) {
+      plac[i] = parseInt(inps1[i].value)
+    }
+
+    $('#helloa').append(`<p style="text-align: center;"> 
+    -------------------- <br>
+    Grupo A <br>
+    -------------------- <br>
+    Catar ${plac[0]} X ${plac[1]} Equador <br> 
+    Senegal ${plac[2]} X ${plac[3]} Holanda <br>
+
+    Catar ${plac[4]} X ${plac[5]} Senegal <br>
+    Holanda ${plac[6]} X ${plac[7]} Equador <br>
+
+    Holanda ${plac[8]} X ${plac[9]} Catar <br>
+    Equador ${plac[10]} X ${plac[11]} Senegal <br>
+    <br>
+
+
+    -------------------- <br>
+    Grupo B <br>
+    -------------------- <br>
+    Inglaterra ${plac[12]} X ${plac[13]} Irã <br> 
+    EUA ${plac[14]} X ${plac[15]} Gales <br>
+
+    Gales ${plac[16]} X ${plac[17]} Irã <br>
+    Inglaterra ${plac[18]} X ${plac[19]} EUA <br>
+
+    Irã ${plac[20]} X ${plac[21]} EUA <br>
+    Gales ${plac[22]} X ${plac[23]} Inglaterra <br>
+    <br>
+
+
+    -------------------- <br>
+    Grupo C <br>
+    -------------------- <br>
+    Argentina ${plac[24]} X ${plac[25]} Arábia Saudita <br> 
+    México ${plac[26]} X ${plac[27]} Polônia <br>
+
+    Polônia ${plac[28]} X ${plac[29]} Arábia Saudita <br>
+    Argentina ${plac[30]} X ${plac[31]} México <br>
+
+    Polônia ${plac[32]} X ${plac[33]} Argentina <br>
+    Arábia Saudita ${plac[34]} X ${plac[35]} México <br>
+    <br>
+
+
+    -------------------- <br>
+    Grupo D <br>
+    -------------------- <br>
+    Dinamarca ${plac[36]} X ${plac[37]} Tunísia <br> 
+    França ${plac[38]} X ${plac[39]} Austrália <br>
+
+    Tunísia ${plac[40]} X ${plac[41]} Austrália <br>
+    França ${plac[42]} X ${plac[43]} Dinamarca <br>
+
+    Tunísia ${plac[44]} X ${plac[45]} França <br>
+    Austrália ${plac[46]} X ${plac[47]} Dinamarca <br>
+    <br>
+
+
+    -------------------- <br>
+    Grupo E <br>
+    -------------------- <br>
+    Alemanha ${plac[48]} X ${plac[49]} Japão <br> 
+    Espanha ${plac[50]} X ${plac[51]} Costa Rica <br>
+
+    Japão ${plac[52]} X ${plac[53]} Costa Rica <br>
+    Espanha ${plac[54]} X ${plac[55]} Alemanha <br>
+
+    Japão ${plac[56]} X ${plac[57]} Espanha <br>
+    Costa Rica ${plac[58]} X ${plac[59]} Alemanha <br>
+    <br>
+
+
+    -------------------- <br>
+    Grupo F <br>
+    -------------------- <br>
+    Marrocos ${plac[60]} X ${plac[61]} Croácia <br> 
+    Bélgica ${plac[62]} X ${plac[63]} Canadá <br>
+
+    Bélgica ${plac[64]} X ${plac[65]} Marrocos <br>
+    Croácia ${plac[66]} X ${plac[67]} Canadá <br>
+
+    Croácia ${plac[68]} X ${plac[69]} Bélgica <br>
+    Canadá ${plac[70]} X ${plac[71]} Marrocos <br>
+    <br>
+
+
+    -------------------- <br>
+    Grupo G <br>
+    -------------------- <br>
+    Suíça ${plac[72]} X ${plac[73]} Camarões <br> 
+    Brasil ${plac[74]} X ${plac[75]} Sérvia <br>
+
+    Camarões ${plac[76]} X ${plac[77]} Sérvia <br>
+    Brasil ${plac[78]} X ${plac[79]} Suíça <br>
+
+    Camarões ${plac[80]} X ${plac[81]} Brasil <br>
+    Sérvia ${plac[82]} X ${plac[83]} Suíça <br>
+    <br>
+
+
+    -------------------- <br>
+    Grupo H <br>
+    -------------------- <br>
+    Uruguai ${plac[84]} X ${plac[85]} Coreia do Sul <br> 
+    Portugal ${plac[86]} X ${plac[87]} Gana <br>
+
+    Coreia do Sul ${plac[88]} X ${plac[89]} Gana <br>
+    Portugal ${plac[90]} X ${plac[91]} Uruguai <br>
+
+    Coreia do Sul ${plac[92]} X ${plac[93]} Portugal <br>
+    Gana ${plac[94]} X ${plac[95]} Uruguai <br>
+    <br>
+
+    
+    </p>`);
+  });
+
+
+  let stg = $('#meuModal')
+  stg.css({
+    "visibility": "visible"
+  })
+
 }
 
-function paginaBrasil() {
-  $(location).attr('href', '../html/copaBrasil.html')
+
+function vaiDarCerto() {
+  let paragrafos = document.querySelectorAll('p')
+
+  paragrafos.forEach(e => {
+    console.log(e)
+
+  });
 }
 
-function popUP() {
-  alert("Em construção...")
+function whatsapp() {
+  let inps2 = document.querySelectorAll('input')
+  const plac = []
+
+  for (let i = 0; i < inps2.length; i++) {
+    plac[i] = parseInt(inps2[i].value)
+  }
+
+
+  alert("NÃO SE ESQUECA DE FAZER O PIX: (19)992481225 \nValor: R$ 10,00")
+
+  let text = `APOSTA *FUTBR* - COPA DO MUNDO CATAR-2022%0A%0A-------------------- %0AGrupo A%0A-------------------- %0ACatar ${plac[0]} X ${plac[1]} Equador %0ASenegal ${plac[2]} X ${plac[3]} Holanda %0ACatar ${plac[4]} X ${plac[5]} Senegal %0AHolanda ${plac[6]} X ${plac[7]} Equador %0AHolanda ${plac[8]} X ${plac[9]} Catar%0AEquador ${plac[10]} X ${plac[11]} Senegal%0A%0A-------------------- %0AGrupo B%0A-------------------- %0AInglaterra ${plac[12]} X ${plac[13]} Irã%0AEUA ${plac[14]} X ${plac[15]} Gales %0AGales ${plac[16]} X ${plac[17]} Irã %0AInglaterra ${plac[18]} X ${plac[19]} EUA %0AIrã ${plac[20]} X ${plac[21]} EUA %0AGales ${plac[22]} X ${plac[23]} Inglaterra%0A%0A-------------------- %0AGrupo C%0A-------------------- %0AArgentina ${plac[24]} X ${plac[25]} Arábia Saudita%0AMéxico ${plac[26]} X ${plac[27]} Polônia %0APolônia ${plac[28]} X ${plac[29]} Arábia Saudita%0AArgentina ${plac[30]} X ${plac[31]} México %0APolônia ${plac[32]} X ${plac[33]} Argentina%0AArábia Saudita ${plac[34]} X ${plac[35]} México%0A%0A-------------------- %0AGrupo D%0A-------------------- %0ADinamarca ${plac[36]} X ${plac[37]} Tunísia%0AFrança ${plac[38]} X ${plac[39]} Austrália%0ATunísia ${plac[40]} X ${plac[41]} Austrália%0AFrança ${plac[42]} X ${plac[43]} Dinamarca %0ATunísia ${plac[44]} X ${plac[45]} França %0AAustrália ${plac[46]} X ${plac[47]} Dinamarca %0A%0A-------------------- %0AGrupo E %0A-------------------- %0AAlemanha ${plac[48]} X ${plac[49]} Japão %0AEspanha ${plac[50]} X ${plac[51]} Costa Rica %0AJapão ${plac[52]} X ${plac[53]} Costa Rica %0AEspanha ${plac[54]} X ${plac[55]} Alemanha %0AJapão ${plac[56]} X ${plac[57]} Espanha %0ACosta Rica ${plac[58]} X ${plac[59]} Alemanha %0A%0A-------------------- %0AGrupo F %0A-------------------- %0AMarrocos ${plac[60]} X ${plac[61]} Croácia %0ABélgica ${plac[62]} X ${plac[63]} Canadá %0ABélgica ${plac[64]} X ${plac[65]} Marrocos %0ACroácia ${plac[66]} X ${plac[67]} Canadá %0ACroácia ${plac[68]} X ${plac[69]} Bélgica %0ACanadá ${plac[70]} X ${plac[71]} Marrocos %0A%0A-------------------- %0AGrupo G %0A-------------------- %0ASuíça ${plac[72]} X ${plac[73]} Camarões %0ABrasil ${plac[74]} X ${plac[75]} Sérvia %0ACamarões ${plac[76]} X ${plac[77]} Sérvia %0ABrasil ${plac[78]} X ${plac[79]} Suíça %0ACamarões ${plac[80]} X ${plac[81]} Brasil %0ASérvia ${plac[82]} X ${plac[83]} Suíça %0A%0A-------------------- %0AGrupo H %0A-------------------- %0AUruguai ${plac[84]} X ${plac[85]} Coreia do Sul %0A`
+  let text2 = `Portugal ${plac[86]} X ${plac[87]} Gana %0ACoreia do Sul ${plac[88]} X ${plac[89]} Gana %0APortugal ${plac[90]} X ${plac[91]} Uruguai %0ACoreia do Sul ${plac[92]} X ${plac[93]} Portugal %0AGana ${plac[94]} X ${plac[95]} Uruguai %0A%0A*Campeão:* Brasil ou Argentina %0APix: 19992481225`
+
+  window.open(`https://wa.me/5519992481225?text=${text}${text2}`)
+  paginaCopaDoMundo()
 }
+
+
+/* ================================================ */
+/* ================= PÁGINA LIBERTA =============== */
+/* ================================================ */
+function paginaCopaDoMundo() {
+  $(location).attr('href', '../html/copaMundo.html')
+}
+
