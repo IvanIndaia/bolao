@@ -89,7 +89,7 @@
                                             <p>Catar</p>
                                             <img class="logos" src="../images/mundo/catar.png" alt="">
                                             <div class="x">
-                                                <input id="QAT-1" class="placar" type="text">
+                                                <input id="QAT-1" class="placar" type="tel">
                                                 <h3>X</h3>
                                                 <input id="EQU-1" class="placar" type="text">
                                             </div>
@@ -184,8 +184,8 @@
                                                 <h3>X</h3>
                                                 <input id="IRA-1" class="placar" type="text">
                                             </div>
-                                            <img class="logos" src="../images/mundo/iran.png" alt="">
-                                            <p>Iran</p>
+                                            <img class="logos" src="../images/mundo/irã.png" alt="">
+                                            <p>Irã</p>
                                         </div>
                                     </div>
                                     <div class="grup">
@@ -212,8 +212,8 @@
                                                 <h3>X</h3>
                                                 <input id="IRA-2" class="placar" type="text">
                                             </div>
-                                            <img class="logos" src="../images/mundo/iran.png" alt="">
-                                            <p>Iran</p>
+                                            <img class="logos" src="../images/mundo/irã.png" alt="">
+                                            <p>Irã</p>
                                         </div>
                                     </div>
                                     <div class="grup">
@@ -233,8 +233,8 @@
                                     <div class="grup">
                                         <h6>TER 29/11/2022 AL THUMAMA 16:00</h6>
                                         <div>
-                                            <p>Iran</p>
-                                            <img class="logos" src="../images/mundo/iran.png" alt="">
+                                            <p>Irã</p>
+                                            <img class="logos" src="../images/mundo/irã.png" alt="">
                                             <div class="x">
                                                 <input id="IRA-3" class="placar" type="text">
                                                 <h3>X</h3>
@@ -472,7 +472,7 @@
                                                 <input id="CRC-1" class="placar" type="text">
                                             </div>
                                             <img class="logos" src="../images/mundo/costaRica.png" alt="">
-                                            <p>Costa Rica</p>
+                                            <p>Costa</p>
                                         </div>
                                     </div>
                                     <div class="grup">
@@ -486,8 +486,8 @@
                                                 <input id="CRC-2" class="placar" type="text">
                                             </div>
                                             <img class="logos" src="../images/mundo/costaRica.png" alt="">
+                                            <p>Costa Rica</p>
                                         </div>
-                                        <p>Costa Rica</p>
                                     </div>
                                     <div class="grup">
                                         <h6>DOM 27/11/2022 AL BAYT 16:00</h6>
@@ -807,9 +807,62 @@
                             </div>
                         </div>
                     </div>
-                    <!--========================
+                    <!--==================================================================================================
                         COPA DO MUNDO
-                    =========================-->
+                    ==================================================================================================-->
+
+                    <button onclick="acionarModal()" class="btn btn-success btnApostar" data-toggle="modal">
+                        Apostar
+                    </button>
+
+                    <div class="modal" tabindex="-1" role="dialog" id="meuModalA">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1>Sua aposta:</h1>
+                                </div>
+                                <div class="modal-body display-7" id="helloa">
+                                    <!-- <p style="text-align: center;">
+
+                                    </p> -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button onclick="whatsapp()" class="btn btn-primary">
+                                        Confirmar
+                                    </button>
+                                    <button onclick="paginaLiberta()" type="button" class="btn btn-secondary"
+                                        data-dismiss="modal">
+                                        Cancelar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal" tabindex="-1" role="dialog" id="meuModalB">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1>Qual time será Campeão?</h1>
+                                </div>
+                                <div class="modal-body display-7">
+                                    <input onchange="habilitarBotao()" type="radio" name="campeao" id="fla"
+                                        value="Flamengo"><label for="fla"> Flamengo</label> <br>
+                                    <input onchange="habilitarBotao()" type="radio" name="campeao" id="cap"
+                                        value="Athlético-PR"><label for="cap"> Athlético-PR</label>
+                                </div>
+                                <div class="modal-footer">
+                                    <button style="visibility: hidden;" id="botaoConf" onclick="capturaCampeao()"
+                                        class="btn btn-primary">
+                                        Avançar
+                                    </button>
+                                    <button onclick="paginaLiberta()" type="button" class="btn btn-secondary"
+                                        data-dismiss="modal">
+                                        Cancelar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <div id="apostasValidas" class="tab-pane fade">
