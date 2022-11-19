@@ -1,6 +1,9 @@
 
 function acionarModal() {
 
+  
+
+
   let inps = document.querySelectorAll('input')
   preencherTodos = false
 
