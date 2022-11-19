@@ -8,7 +8,7 @@ function acionarModal() {
   preencherTodos = false
 
   inps.forEach(e => {
-    // console.log(e.id + ' -> ' + e.value)
+    console.log(e.id + ' -> ' + e.value)
     if (isNaN(parseInt(e.value))) {
       preencherTodos = false
     } else {
@@ -17,12 +17,11 @@ function acionarModal() {
   });
 
   if (preencherTodos) {
-    alert("OK")
+    apostarCopaDoMundo()
   } else {
     alert("Preencher todos os jogos com placares VÁLIDOS!")
   }
 
-  apostarCopaDoMundo()
 }
 
 function apostarCopaDoMundo() {
@@ -172,12 +171,21 @@ function apostarCopaDoMundo() {
 
 
 function vaiDarCerto() {
-  let paragrafos = document.querySelectorAll('p')
+  // let paragrafos = document.querySelectorAll('p')
 
-  paragrafos.forEach(e => {
-    console.log(e)
+  // paragrafos.forEach(e => {
+  //   console.log(e)
 
-  });
+  // });
+
+let choice1 = document.getElementById('inputGroupSelect01')
+let choice2 = document.getElementById('inputGroupSelect02')
+
+
+console.log(choice1.value)
+console.log(choice2.value)
+
+
 }
 
 function whatsapp() {
@@ -198,10 +206,6 @@ function whatsapp() {
   paginaCopaDoMundo()
 }
 
-
-/* ================================================ */
-/* ================= PÁGINA LIBERTA =============== */
-/* ================================================ */
 function paginaCopaDoMundo() {
   $(location).attr('href', '../html/copaMundo.html')
 }
