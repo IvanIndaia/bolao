@@ -6,7 +6,7 @@ function acionarModal() {
 
   let notAnumber = 0
 
-  for (i = 0; i < inpsA.length; i++) {
+  for (i = 2; i < inpsA.length; i++) {
     console.log(inpsA[i].id + ' -> ' + inpsA[i].value)
     if (isNaN(parseInt(inpsA[i].value))) {
       notAnumber++
