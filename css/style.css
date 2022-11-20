@@ -101,7 +101,7 @@ section {
 
 #home>#hdiv>a>.hdiv22 {
     /* border: 1px solid black; */
-    background-image: linear-gradient(var(--cor3), var(--cor2));
+    background-image: linear-gradient(var(--cor3), rgb(11, 131, 11));
     color: var(--cor5);
     overflow: hidden;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.449);
@@ -138,7 +138,14 @@ section {
 #home>#hdiv>a>.hdiv22:hover {
     cursor: pointer;
     transition: 1s;
-    background-image: radial-gradient(var(--cor5), var(--cor4));
+    background-image: radial-gradient(rgba(0, 102, 255, 0.668), rgb(212, 255, 0));
+    color: var(--cor1);
+}
+
+#home>#hdiv>a>.hdiv2:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-image: radial-gradient(green, rgba(0, 128, 0, 0.649));
     color: var(--cor1);
 }
 
