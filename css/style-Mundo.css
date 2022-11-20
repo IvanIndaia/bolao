@@ -32,10 +32,9 @@
     text-align: center;
 }
 
-#grupoA>div>h2 {}
-
 .logos {
-    width: 50px;
+    width: 45px;
+    padding: 10px 1px 10px 1px;
 }
 
 h3 {
@@ -45,8 +44,14 @@ h3 {
     padding-top: 10px;
 }
 
+#listaMundo li{
+    display: flex;
+
+}
+
 .img {
     width: 40%;
+    /* padding: 1px 20px 1px 20px; */
     box-shadow: 1px 2px 12px black;
     margin-top: 20px;
     border-radius: 15px;
@@ -72,14 +77,6 @@ h3 {
     overflow: auto;
     margin: auto;
     margin-top: 7px;
-}
-
-#arti {
-    /* width: 80%; */
-}
-
-.input-group-prepend {
-    /* width: 20%; */
 }
 
 #inputGroupSelect02,
