@@ -54,14 +54,45 @@ h3 {
 }
 
 .grid {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.214);
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     overflow: auto;
-    
+
     padding: 10px 1px 25px 1px;
+}
+
+#campeaoArtilheiro {
+    /* width: 50%; */
+    border: 1px solid rgba(0, 0, 0, 0.216);
+    display: block;
+    align-items: center;
+    overflow: auto;
+    margin: auto;
+    margin-top: 7px;
+}
+
+#arti {
+    /* width: 80%; */
+}
+
+.input-group-prepend {
+    /* width: 20%; */
+}
+
+#inputGroupSelect02,
+#inputGroupSelect01 {
+    width: 40%;
+}
+
+form.control {
+    width: 100px;
+}
+
+.custom-select {
+    justify-content: center;
 }
 
 .grid h6 {
@@ -110,3 +141,9 @@ h3 {
     overflow: hidden;
     background-color: rgba(69, 69, 67, 0.847);
 }
+
+/* ===================== MEDIA 800 ===================== */
+@media screen and (max-width: 800px) {}
+
+/* ===================== MEDIA 470 ===================== */
+@media screen and (max-width: 470px) {}
