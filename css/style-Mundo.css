@@ -134,6 +134,18 @@ form.control {
     background-color: rgba(69, 69, 67, 0.847);
 }
 
+.apostaJogador img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 1%;
+    box-shadow: 1px 2px 7px black;
+}
+
+.allApostaJogador{
+    width: 362px;
+    display: flex;
+    flex-direction: column;    
+}
 /* ===================== MEDIA 800 ===================== */
 @media screen and (max-width: 800px) {}
 
