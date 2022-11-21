@@ -8,7 +8,7 @@ function acionarModal() {
 
   for (i = 0; i < inpsA.length; i++) {
     console.log('Placar ' + i + ' = ' + inpsA[i].id + ' -> ' + inpsA[i].value)
-    if (i === 0 || i === 1 || i === 12 || i === 13) {
+    if (i === 0 || i === 1 || i == 2 || i == 3 || i === 12 || i === 13 || i === 14 || i === 15) {
       console.log(`Jogo Inválido ${i} - ${inpsA[i]}`)
     } else {
       if (isNaN(parseInt(inpsA[i].value))) {
