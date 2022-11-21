@@ -6,15 +6,19 @@ function acionarModal() {
 
   let notAnumber = 0
 
-  for (i = 2; i < inpsA.length; i++) {
-    console.log(inpsA[i].id + ' -> ' + inpsA[i].value)
-    if (isNaN(parseInt(inpsA[i].value))) {
-      notAnumber++
+  for (i = 0; i < inpsA.length; i++) {
+    console.log('Placar ' + i + ' = ' + inpsA[i].id + ' -> ' + inpsA[i].value)
+    if (i === 0 || i === 1 || i === 12 || i === 13) {
+      console.log(`Jogo Inválido ${i} - ${inpsA[i]}`)
+    } else {
+      if (isNaN(parseInt(inpsA[i].value))) {
+        notAnumber++
+      }
     }
   }
 
   console.log(`Quantidade de Placar: ${inpsA.length}`)
-  console.log(`Quantidade de INputs: ${inps.length}`)
+  console.log(`Quantidade de Inputs: ${inps.length}`)
 
   if (notAnumber === 0) {
     apostarCopaDoMundo()
