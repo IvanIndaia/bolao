@@ -26,14 +26,4 @@
 
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
-    .apostaJogador {
-        margin: auto;
-        padding: 7px;
-    }
-
-    .allApostaJogador {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        transition: .5s;
-    }
 }
