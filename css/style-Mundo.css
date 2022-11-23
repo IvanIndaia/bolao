@@ -142,43 +142,8 @@ form.control {
 }
 
 .allApostaJogador {
-    width: 362px;
+    /* width: 362px; */
     display: flex;
     flex-direction: column;
 }
 
-
-
-
-/* Medium screen devices (768px and above) */
-@media only screen and (min-width: 768px) {
-    .apostaJogador img {
-        /* margin-left: 10px; */
-    }
-
-    .allApostaJogador {
-        display: grid;
-        grid-template-columns: 450px 450px;
-        transition: .5s;
-    }
-}
-
-/* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) {}
-
-/* Extra big screen devices (1200px and above) */
-@media only screen and (min-width: 1200px) {
-    .apostaJogador img {
-        /* margin-left: 10:px; */
-    }
-
-    .apostaJogador {
-        padding: 15px;
-    }
-
-    .allApostaJogador {
-        display: grid;
-        grid-template-columns: 450px 450px 450px;
-        transition: .5s;
-    }
-}

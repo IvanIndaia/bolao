@@ -3,26 +3,37 @@
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    
-}
+@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-}
+@media only screen and (min-width: 600px) {}
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium screen devices (768px and above) */
 @media only screen and (min-width: 768px) {
-    
+    .allApostaJogador {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        transition: .5s;
+    }
+    .apostaJogador {
+        margin: auto;
+        padding: 10px;
+    }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-}
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
-    
+    .apostaJogador {
+        margin: auto;
+        padding: 7px;
+    }
+
+    .allApostaJogador {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        transition: .5s;
+    }
 }
