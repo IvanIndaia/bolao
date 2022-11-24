@@ -19,6 +19,9 @@
         margin: auto;
         padding: 10px;
     }
+    #classifica {
+        padding: 150px;
+    }
 }
 
 /* Big screen devices (889px and above) */

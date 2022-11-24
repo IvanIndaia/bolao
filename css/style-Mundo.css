@@ -147,3 +147,8 @@ form.control {
     flex-direction: column;
 }
 
+#classifica {
+    /* width: 362px; */
+    display: flex;
+    flex-direction: column;
+}
