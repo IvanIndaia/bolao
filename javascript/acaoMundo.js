@@ -58,9 +58,9 @@ function apostarCopaDoMundo() {
   
 
     $('#helloa').append(`<p style="text-align: center;"> 
-    -------------------- <br>
+    --------------------------- <br>
     Oitavas de Final <br>
-    -------------------- <br>
+    --------------------------- <br>
     Holanda ${plac[0]} X ${plac[1]} Estados Unidos <br> 
     Polônia ${plac[2]} X ${plac[3]} Dinamarca <br>
 
@@ -127,7 +127,7 @@ function whatsapp() {
   alert("AINDA NÃO FINALIZOU.. \nA aposta só será validada quando a mensagem chegar no Whatsapp!!!")
 
   /* let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A-------------------- %0AOitavas de Final%0A-------------------- %0ACatar ${plac[0]} X ${plac[1]} Equador %0ASenegal ${plac[2]} X ${plac[3]} Holanda %0ACatar ${plac[4]} X ${plac[5]} Senegal %0AHolanda ${plac[6]} X ${plac[7]} Equador %0AHolanda ${plac[8]} X ${plac[9]} Catar%0AEquador ${plac[10]} X ${plac[11]}` */
-  let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A-------------------- %0AOitavas de Final%0A-------------------- %0AHolanda ${plac[0]} X ${plac[1]} Estados Unidos %0APolônia ${plac[2]} X ${plac[3]} Dinamarca %0AEspanha ${plac[4]} X ${plac[5]} Bélgica %0ABrasil ${plac[6]} X ${plac[7]} Uruguai %0AInglaterra ${plac[8]} X ${plac[9]} Senegal%0AFrança ${plac[10]} X ${plac[11]} Argentina%0ACroácia ${plac[12]} X ${plac[13]} Alemanha%0APortugal ${plac[14]} X ${plac[15]} Suíça%0A`
+  let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A--------------------------- %0AOitavas de Final%0A--------------------------- %0AHolanda ${plac[0]} X ${plac[1]} Estados Unidos %0APolônia ${plac[2]} X ${plac[3]} Dinamarca %0AEspanha ${plac[4]} X ${plac[5]} Bélgica %0ABrasil ${plac[6]} X ${plac[7]} Uruguai %0AInglaterra ${plac[8]} X ${plac[9]} Senegal%0AFrança ${plac[10]} X ${plac[11]} Argentina%0ACroácia ${plac[12]} X ${plac[13]} Alemanha%0APortugal ${plac[14]} X ${plac[15]} Suíça%0A`
 
   window.open(`https://wa.me/5519992481225?text=${text}`)
   paginaCopaDoMundo()
