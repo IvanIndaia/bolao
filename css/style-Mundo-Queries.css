@@ -25,8 +25,15 @@
 }
 
 /* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) {}
+@media only screen and (min-width: 889px) {
+    .allApostaJogador {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
+    .allApostaJogador {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
