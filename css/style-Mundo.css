@@ -148,6 +148,14 @@ form.control {
     margin-left: 0;
 }
 
+.duplo {
+    background-color: rgba(0, 81, 255, 0.492);
+}
+
+.allApostaJogador div:hover {
+    background-color: yellow;
+}
+
 #classifica{
     /* width: 362px; */
     display: flex;
