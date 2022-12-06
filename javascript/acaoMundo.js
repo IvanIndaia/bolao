@@ -8,6 +8,7 @@ let B2 = 'Brasil'
 let C2 = 'França'
 let D2 = 'Portugal'
 
+
 function acionarModal() {
 
   let inpsA = document.getElementsByClassName('placar')
