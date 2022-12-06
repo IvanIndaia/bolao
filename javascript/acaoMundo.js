@@ -1,7 +1,7 @@
 let A1 = 'Holanda'
 let B1 = 'Croácia'
 let C1 = 'Inglaterra'
-let D1 = 'Espanha'
+let D1 = 'Marrocos'
 
 let A2 = 'Argentina'
 let B2 = 'Brasil'
