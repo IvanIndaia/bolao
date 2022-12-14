@@ -6,7 +6,11 @@
 @media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .classifica {
+        padding: 50px 60px;
+    }
+}
 
 /* Medium screen devices (768px and above) */
 @media only screen and (min-width: 768px) {
@@ -19,8 +23,9 @@
         margin: auto;
         padding: 10px;
     }
-    #classifica {
-        padding: 100px 120px;
+    .classifica {
+        grid-template-columns: 1fr;
+        padding: 80px 100px;
     }
 }
 
@@ -35,5 +40,9 @@
 @media only screen and (min-width: 1200px) {
     .allApostaJogador {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .classifica {
+        padding: 130px 170px;
+        width: 75%;
     }
 }
