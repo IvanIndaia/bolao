@@ -63,14 +63,10 @@ function apostarCopaDoMundo() {
 
     $('#helloa').append(`<p style="text-align: center;"> 
     ------------------------------ <br>
-    Disputa 3º Lugar <br>
+    Sem-Final <br>
     ------------------------------ <br>
-    ${A2} ${plac[0]} X ${plac[1]} ${B2} <br>
-    <br><br>
-    ------------------------------ <br>
-    Final <br>
-    ------------------------------ <br>
-    ${A1} ${plac[2]} X ${plac[3]} ${B1} <br>
+    ${A1} ${plac[0]} X ${plac[1]} ${A2} <br> 
+    ${B1} ${plac[2]} X ${plac[3]} ${B2} <br>
 
     <br>
 
@@ -128,7 +124,7 @@ function whatsapp() {
 
   /* let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A-------------------- %0AOitavas de Final%0A-------------------- %0ACatar ${plac[0]} X ${plac[1]} Equador %0ASenegal ${plac[2]} X ${plac[3]} Holanda %0ACatar ${plac[4]} X ${plac[5]} Senegal %0AHolanda ${plac[6]} X ${plac[7]} Equador %0AHolanda ${plac[8]} X ${plac[9]} Catar%0AEquador ${plac[10]} X ${plac[11]}` */
   // let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A--------------------------- %0AOitavas de Final%0A--------------------------- %0AHolanda ${plac[0]} X ${plac[1]} Estados Unidos %0AArgentina ${plac[2]} X ${plac[3]} Austrália %0AJapão ${plac[4]} X ${plac[5]} Croácia %0ABrasil ${plac[6]} X ${plac[7]} Coréia %0AInglaterra+ ${plac[8]} X ${plac[9]} Senegal%0AFrança ${plac[10]} X ${plac[11]} Polônia%0AMarrocos ${plac[12]} X ${plac[13]} Espanha%0APortugal ${plac[14]} X ${plac[15]} Suíça%0A`
-  let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A--------------------------- %0A   Disputa do 3º Lugar%0A--------------------------- %0A${A2} ${plac[0]} X ${plac[1]} ${B2} %0A%0A--------------------------- %0A               Final%0A--------------------------- %0A${A1}  ${plac[2]} X ${plac[3]} ${B1}`
+  let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A--------------------------- %0ASemi-Final%0A--------------------------- %0A ${A1}  ${plac[0]} X ${plac[1]} ${A2} %0A ${B1} ${plac[2]} X ${plac[3]} ${B2}`
 
   window.open(`https://wa.me/5519992481225?text=${text}`)
   paginaCopaDoMundo()
