@@ -156,13 +156,14 @@ form.control {
     background-color: yellow;
 }
 
-#classifica{
+.classifica{
     /* width: 362px; */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: auto;
 }
 
-#classifica img{
+.classifica img{
     box-shadow: 2px 2px 7px black;
-    border-radius: 1%;
 }
