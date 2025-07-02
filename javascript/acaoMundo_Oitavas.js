@@ -1,11 +1,8 @@
-
 function acionarModal() {
 
   let inpsA = document.getElementsByClassName('placar')
   let inps = document.querySelectorAll('input')
 
-
-  
   let notAnumber = 0
 
   for (i = 0; i < inpsA.length; i++) {
@@ -18,12 +15,10 @@ function acionarModal() {
       }
     }
   }
-
   /*
   console.log(`Quantidade de Placar: ${inpsA.length}`)
   console.log(`Quantidade de Inputs: ${inps.length}`)
   */
-
   if (notAnumber === 0) {
     apostarCopaDoMundo()
   } else {
@@ -34,6 +29,9 @@ function acionarModal() {
 }
 
 function apostarCopaDoMundo() {
+
+  const elmnto = document.getElementById('helloa');
+  elmnto.innerHTML = ''
 
   let inpsB = document.getElementsByClassName('placar')
 
@@ -55,23 +53,23 @@ function apostarCopaDoMundo() {
       plac[i] = parseInt(inpsB[i].value)
     }
 
-  
+
 
     $('#helloa').append(`<p style="text-align: center;"> 
     --------------------------- <br>
     Oitavas de Final <br>
     --------------------------- <br>
-    Holanda ${plac[0]} X ${plac[1]} Estados Unidos <br> 
-    Argentina ${plac[2]} X ${plac[3]} Austrália <br>
+    Palmeiras ${plac[0]} X ${plac[1]} Botafogo <br> 
+    Benfica ${plac[2]} X ${plac[3]} Chelsea <br>
 
-    Japão ${plac[4]} X ${plac[5]} Croácia <br>
-    Brasil ${plac[6]} X ${plac[7]} Coréia <br>
+    Inter de Milão ${plac[4]} X ${plac[5]} Fluminense <br>
+    Manchester City ${plac[6]} X ${plac[7]} Al-Hilal <br>
 
-    Inglaterra ${plac[8]} X ${plac[9]} Senegal <br>
-    França ${plac[10]} X ${plac[11]} Polônia <br>
+    PSG ${plac[8]} X ${plac[9]} Inter Miami <br>
+    Flamengo ${plac[10]} X ${plac[11]} Bayern de Munique <br>
 
-    Marrocos ${plac[12]} X ${plac[13]} Espanha <br>
-    Portugal ${plac[14]} X ${plac[15]} Suíça <br>
+    Borussia Dortmund ${plac[12]} X ${plac[13]} Monterrey <br>
+    Real Madrid ${plac[14]} X ${plac[15]} Juventus <br>
     <br>
 
     </p>`);
@@ -93,21 +91,21 @@ function vaiDarCerto() {
 
   // });
 
-  let campeao1 = document.getElementById('inputGroupSelect01')
-  let campeao2 = document.getElementById('inputGroupSelect02')
+  // let campeao1 = document.getElementById('inputGroupSelect01')
+  // let campeao2 = document.getElementById('inputGroupSelect02')
 
 
-  console.log(campeao1.value)
-  console.log(campeao2.value)
+  // console.log(campeao1.value)
+  // console.log(campeao2.value)
 
-  let artilheiro = document.getElementsByClassName('form-control')
+  // let artilheiro = document.getElementsByClassName('form-control')
 
-  for (i = 0; i < artilheiro.length; i++) {
-    console.log(artilheiro[i].value)
-  }
+  // for (i = 0; i < artilheiro.length; i++) {
+  //   console.log(artilheiro[i].value)
+  // }
 
-  jogadorArt1 = artilheiro[0].value
-  jogadorArt2 = artilheiro[1].value
+  // jogadorArt1 = artilheiro[0].value
+  // jogadorArt2 = artilheiro[1].value
   // console.log(artilheiro2.value)
 
 }
@@ -123,18 +121,42 @@ function whatsapp() {
     plac[i] = parseInt(inpsC[i].value)
   }
 
+  let userName = prompt("Digite o seu Nome: ");
+  let cellPhone = prompt("Digite o número do seu Celular com DDD: ");
 
   alert("AINDA NÃO FINALIZOU.. \nA aposta só será validada quando a mensagem chegar no Whatsapp!!!")
 
-  /* let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A-------------------- %0AOitavas de Final%0A-------------------- %0ACatar ${plac[0]} X ${plac[1]} Equador %0ASenegal ${plac[2]} X ${plac[3]} Holanda %0ACatar ${plac[4]} X ${plac[5]} Senegal %0AHolanda ${plac[6]} X ${plac[7]} Equador %0AHolanda ${plac[8]} X ${plac[9]} Catar%0AEquador ${plac[10]} X ${plac[11]}` */
-  // let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A--------------------------- %0AOitavas de Final%0A--------------------------- %0AHolanda ${plac[0]} X ${plac[1]} Estados Unidos %0APolônia ${plac[2]} X ${plac[3]} Dinamarca %0AEspanha ${plac[4]} X ${plac[5]} Bélgica %0ABrasil ${plac[6]} X ${plac[7]} Uruguai %0AInglaterra ${plac[8]} X ${plac[9]} Senegal%0AFrança ${plac[10]} X ${plac[11]} Argentina%0ACroácia ${plac[12]} X ${plac[13]} Alemanha%0APortugal ${plac[14]} X ${plac[15]} Suíça%0A`
-  let text = `APOSTA *FUTBR* %0ACOPA DO MUNDO CATAR-2022%0A%0A--------------------------- %0AOitavas de Final%0A--------------------------- %0AHolanda ${plac[0]} X ${plac[1]} Estados Unidos %0AArgentina ${plac[2]} X ${plac[3]} Austrália %0AJapão ${plac[4]} X ${plac[5]} Croácia %0ABrasil ${plac[6]} X ${plac[7]} Coréia %0AInglaterra+ ${plac[8]} X ${plac[9]} Senegal%0AFrança ${plac[10]} X ${plac[11]} Polônia%0AMarrocos ${plac[12]} X ${plac[13]} Espanha%0APortugal ${plac[14]} X ${plac[15]} Suíça%0A`
+
+  let text = `NOME: ${userName} %0AContato: ${cellPhone} %0A%0AAPOSTA *FUTBR* %0AMUNDIAL DE CLUBES FIFA-2025%0A%0A--------------------------- %0AOitavas de Final%0A--------------------------- %0APalmeiras ${plac[0]} X ${plac[1]} Botafogo %0ABenfica ${plac[2]} X ${plac[3]} Chelsea %0AInter de Milão ${plac[4]} X ${plac[5]} Fluminense %0AManchester City ${plac[6]} X ${plac[7]} Al-Hilal %0APSG ${plac[8]} X ${plac[9]} Inter Miami %0AFlamengo ${plac[10]} X ${plac[11]} Bayern de Munique %0ABorussia Dortmund ${plac[12]} X ${plac[13]} Monterrey %0AReal Madrid ${plac[14]} X ${plac[15]} Juventus%0A`
+
+
+  // salvarEmArquivo()
 
   window.open(`https://wa.me/5519992481225?text=${text}`)
   paginaCopaDoMundo()
 }
 
 function paginaCopaDoMundo() {
-  $(location).attr('href', '../html/copaMundo.html')
+  $(location).attr('href', '../html/oitavasDeFinal.html')
 }
 
+// fs.appendFile()
+
+// salvarEmArquivo() {
+
+//   const fs = require('fs');
+
+//   function salvarDadosNoTxtNode(caminhoArquivo, dados) {
+//     fs.writeFile(caminhoArquivo, dados, (err) => {
+//       if (err) {
+//         console.error("Erro ao escrever no arquivo:", err);
+//       } else {
+//         console.log("Dados salvos com sucesso!");
+//       }
+//     })
+//   }
+
+//   // Exemplo de uso
+//   const dadosParaSalvar = "Este é o texto a ser salvo no arquivo."
+//   salvarDadosNoTxtNode('./meuArquivo.txt', dadosParaSalvar);
+// }
