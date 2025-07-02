@@ -57,19 +57,14 @@ function apostarCopaDoMundo() {
 
     $('#helloa').append(`<p style="text-align: center;"> 
     --------------------------- <br>
-    Oitavas de Final <br>
+    Quartas de Final <br>
     --------------------------- <br>
-    Palmeiras ${plac[0]} X ${plac[1]} Botafogo <br> 
-    Benfica ${plac[2]} X ${plac[3]} Chelsea <br>
+    Palmeiras ${plac[0]} X ${plac[1]} Chelsea <br> 
+    Fluminense ${plac[2]} X ${plac[3]} Al-Hilal <br>
 
-    Inter de Milão ${plac[4]} X ${plac[5]} Fluminense <br>
-    Manchester City ${plac[6]} X ${plac[7]} Al-Hilal <br>
+    PSG ${plac[4]} X ${plac[5]} Bayern de Munique <br>
+    Real Madrid ${plac[6]} X ${plac[7]} Borussia Dortmund <br>
 
-    PSG ${plac[8]} X ${plac[9]} Inter Miami <br>
-    Flamengo ${plac[10]} X ${plac[11]} Bayern de Munique <br>
-
-    Borussia Dortmund ${plac[12]} X ${plac[13]} Monterrey <br>
-    Real Madrid ${plac[14]} X ${plac[15]} Juventus <br>
     <br>
 
     </p>`);
@@ -121,23 +116,24 @@ function whatsapp() {
     plac[i] = parseInt(inpsC[i].value)
   }
 
-  let userName = prompt("Digite o seu Nome: ");
-  let cellPhone = prompt("Digite o número do seu Celular com DDD: ");
+  let userName = prompt("Seu Nome + Sobrenome: ");
+  // let cellPhone = prompt("Digite o número do seu Celular com DDD: ");
 
   alert("AINDA NÃO FINALIZOU.. \nA aposta só será validada quando a mensagem chegar no Whatsapp!!!")
 
 
-  let text = `NOME: ${userName} %0AContato: ${cellPhone} %0A%0AAPOSTA *FUTBR* %0AMUNDIAL DE CLUBES FIFA-2025%0A%0A--------------------------- %0AOitavas de Final%0A--------------------------- %0APalmeiras ${plac[0]} X ${plac[1]} Botafogo %0ABenfica ${plac[2]} X ${plac[3]} Chelsea %0AInter de Milão ${plac[4]} X ${plac[5]} Fluminense %0AManchester City ${plac[6]} X ${plac[7]} Al-Hilal %0APSG ${plac[8]} X ${plac[9]} Inter Miami %0AFlamengo ${plac[10]} X ${plac[11]} Bayern de Munique %0ABorussia Dortmund ${plac[12]} X ${plac[13]} Monterrey %0AReal Madrid ${plac[14]} X ${plac[15]} Juventus%0A`
+  let text = `NOME: ${userName} %0A%0AAPOSTA *FUTBR* %0AMUNDIAL DE CLUBES FIFA-2025%0A%0A--------------------------- %0AQuartas de Final%0A--------------------------- %0APalmeiras ${plac[0]} X ${plac[1]} Chelsea %0AFluminense ${plac[2]} X ${plac[3]} Al-Hilal %0APSG ${plac[4]} X ${plac[5]} Bayern de Munique %0AReal Madrid ${plac[6]} X ${plac[7]} Borussia Dortmund %0A`
 
 
   // salvarEmArquivo()
 
   window.open(`https://wa.me/5519992481225?text=${text}`)
+  console.log('Whatsapp finalizado')
   paginaCopaDoMundo()
 }
 
 function paginaCopaDoMundo() {
-  $(location).attr('href', '../html/oitavasDeFinal.html')
+  $(location).attr('href', '../html/mundial-de-clubes-2025.html')
 }
 
 // fs.appendFile()
