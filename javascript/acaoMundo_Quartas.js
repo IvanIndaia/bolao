@@ -132,6 +132,7 @@ function whatsapp() {
   paginaCopaDoMundo()
 }
 
+
 function paginaCopaDoMundo() {
   $(location).attr('href', '../html/mundial-de-clubes-2025.html')
 }
