@@ -2,6 +2,8 @@ function acionarModal() {
 
   let inpsA = document.getElementsByClassName('placar')
   let inps = document.querySelectorAll('input')
+  let text
+  let userName
 
   let notAnumber = 0
 
@@ -116,19 +118,35 @@ function whatsapp() {
     plac[i] = parseInt(inpsC[i].value)
   }
 
-  let userName = prompt("Seu Nome + Sobrenome: ");
+  userName = prompt("Seu Nome + Sobrenome: ");
   // let cellPhone = prompt("Digite o número do seu Celular com DDD: ");
 
   alert("AINDA NÃO FINALIZOU.. \nA aposta só será validada quando a mensagem chegar no Whatsapp!!!")
 
 
-  let text = `NOME: ${userName} %0A%0AAPOSTA *FUTBR* %0AMUNDIAL DE CLUBES FIFA-2025%0A%0A--------------------------- %0AQuartas de Final%0A--------------------------- %0APalmeiras ${plac[0]} X ${plac[1]} Chelsea %0AFluminense ${plac[2]} X ${plac[3]} Al-Hilal %0APSG ${plac[4]} X ${plac[5]} Bayern de Munique %0AReal Madrid ${plac[6]} X ${plac[7]} Borussia Dortmund %0A`
+  text = `NOME: ${userName} %0A%0AAPOSTA *FUTBR* %0AMUNDIAL DE CLUBES FIFA-2025%0A%0A--------------------------- %0AQuartas de Final%0A--------------------------- %0APalmeiras ${plac[0]} X ${plac[1]} Chelsea %0AFluminense ${plac[2]} X ${plac[3]} Al-Hilal %0APSG ${plac[4]} X ${plac[5]} Bayern de Munique %0AReal Madrid ${plac[6]} X ${plac[7]} Borussia Dortmund %0A`
 
 
-  // salvarEmArquivo()
+  // salvarEmArquivo(text, userName)
+  // abrirPopUp()
+
+  function abrirPopUp() {
+    // Define as opções do pop-up (tamanho, etc.)
+    const opcoes = "width=500,height=400,left=100,top=100";
+    // Abre o pop-up com o URL desejado e as opções
+    const popup = window.open("http://127.0.0.1:5500/html/mundial-de-clubes-2025.html", "popUp", opcoes);
+  
+    // Verifica se o pop-up foi bloqueado
+    if (!popup) {
+      alert("O pop-up foi bloqueado. Por favor, desbloqueie para continuar.");
+    } else {
+      // Opcional: Adicionar código para manipular o pop-up
+      // Exemplo: popup.document.write("<p>Conteúdo do pop-up</p>");
+    }
+  }
 
   window.open(`https://wa.me/5519992481225?text=${text}`)
-  console.log('Whatsapp finalizado')
+  // console.log('Whatsapp finalizado')
   paginaCopaDoMundo()
 }
 
@@ -137,23 +155,16 @@ function paginaCopaDoMundo() {
   $(location).attr('href', '../html/mundial-de-clubes-2025.html')
 }
 
-// fs.appendFile()
 
-// salvarEmArquivo() {
+// function salvarEmArquivo(n, m){
 
-//   const fs = require('fs');
+//   const texto = n;
+//   const titulo = m;
 
-//   function salvarDadosNoTxtNode(caminhoArquivo, dados) {
-//     fs.writeFile(caminhoArquivo, dados, (err) => {
-//       if (err) {
-//         console.error("Erro ao escrever no arquivo:", err);
-//       } else {
-//         console.log("Dados salvos com sucesso!");
-//       }
-//     })
+//   var blob = new Blob([texto],
+//     {type: 'text/plain: charset-utf-8' });
+
+//     saveAs(blob, titulo + '.txt');
+
+  
 //   }
-
-//   // Exemplo de uso
-//   const dadosParaSalvar = "Este é o texto a ser salvo no arquivo."
-//   salvarDadosNoTxtNode('./meuArquivo.txt', dadosParaSalvar);
-// }
