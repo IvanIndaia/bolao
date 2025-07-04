@@ -1,3 +1,6 @@
+// import { saveAs } from 'file-saver';
+// import fileSaver from 'file-saver';
+
 function acionarModal() {
 
   let inpsA = document.getElementsByClassName('placar')
@@ -121,50 +124,60 @@ function whatsapp() {
   userName = prompt("Seu Nome + Sobrenome: ");
   // let cellPhone = prompt("Digite o número do seu Celular com DDD: ");
 
-  alert("AINDA NÃO FINALIZOU.. \nA aposta só será validada quando a mensagem chegar no Whatsapp!!!")
+  // alert("AINDA NÃO FINALIZOU.. \nA aposta só será validada quando a mensagem chegar no Whatsapp!!!")
+
+  // salvarEmArquivo()
 
 
   text = `NOME: ${userName} %0A%0AAPOSTA *FUTBR* %0AMUNDIAL DE CLUBES FIFA-2025%0A%0A--------------------------- %0AQuartas de Final%0A--------------------------- %0APalmeiras ${plac[0]} X ${plac[1]} Chelsea %0AFluminense ${plac[2]} X ${plac[3]} Al-Hilal %0APSG ${plac[4]} X ${plac[5]} Bayern de Munique %0AReal Madrid ${plac[6]} X ${plac[7]} Borussia Dortmund %0A`
-
-
-  // salvarEmArquivo(text, userName)
-  // abrirPopUp()
-
-  function abrirPopUp() {
-    // Define as opções do pop-up (tamanho, etc.)
-    const opcoes = "width=500,height=400,left=100,top=100";
-    // Abre o pop-up com o URL desejado e as opções
-    const popup = window.open("http://127.0.0.1:5500/html/mundial-de-clubes-2025.html", "popUp", opcoes);
-  
-    // Verifica se o pop-up foi bloqueado
-    if (!popup) {
-      alert("O pop-up foi bloqueado. Por favor, desbloqueie para continuar.");
-    } else {
-      // Opcional: Adicionar código para manipular o pop-up
-      // Exemplo: popup.document.write("<p>Conteúdo do pop-up</p>");
-    }
-  }
+ 
 
   window.open(`https://wa.me/5519992481225?text=${text}`)
-  // console.log('Whatsapp finalizado')
+  console.log('Whatsapp finalizado')
   paginaCopaDoMundo()
 }
-
 
 function paginaCopaDoMundo() {
   $(location).attr('href', '../html/mundial-de-clubes-2025.html')
 }
 
 
-// function salvarEmArquivo(n, m){
 
-//   const texto = n;
-//   const titulo = m;
+// function salvarEmArquivo(){
+  
+  
 
-//   var blob = new Blob([texto],
-//     {type: 'text/plain: charset-utf-8' });
+//   var conteudo = 'Conteúdo do Arquivo'
+//   const blob = new Blob([conteudo], { type: "text/plain;charset=utf-8" });
 
-//     saveAs(blob, titulo + '.txt');
-
+//   fileSaver.saveAs(blob, "meu_arquivo.txt");
   
 //   }
+
+  
+  
+  // var data_string = JSON.stringify(data)
+  // var file = new Blob([data_string], {type:"text"})
+  // var anchor = document.createElement("a")
+
+  // anchor.href = URL.createObjectURL(file)
+  // anchor.download = "save.txt"
+
+  // anchor.click()
+
+
+
+// function abrirPopUp() {
+//   // Define as opções do pop-up (tamanho, etc.)
+//   const opcoes = "width=500,height=400,left=100,top=100";
+//   // Abre o pop-up com o URL desejado e as opções
+//   const popup = window.open("https://ivanindaia.github.io/bolao/html/mundial-de-clubes-2025.html", "popUp", opcoes);
+
+//   // Verifica se o pop-up foi bloqueado
+//   if (!popup) {
+//     alert("O pop-up foi bloqueado. Por favor, desbloqueie para continuar.");
+//   } else {
+//     // Opcional: Adicionar código para manipular o pop-up
+//     // Exemplo: popup.document.write("<p>Conteúdo do pop-up</p>");
+//   }
+// }
