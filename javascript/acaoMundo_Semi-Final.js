@@ -90,7 +90,7 @@ function whatsapp() {
   userName = prompt("Seu Nome + Sobrenome: ");
 
 
-  text = `NOME: ${userName} %0A%0AAPOSTA *FUTBR* %0AMUNDIAL DE CLUBES FIFA-2025%0A%0A--------------------------- %0ASemi Final%0A--------------------------- %0AFluminense ${plac[0]} X ${plac[1]} Chelsea %0APSG ${plac[2]} X ${plac[3]} Real Madrid %0APSG %0A`
+  text = `NOME: ${userName} %0A%0AAPOSTA *FUTBR* %0AMUNDIAL DE CLUBES FIFA-2025%0A%0A--------------------------- %0ASemi Final%0A--------------------------- %0AFluminense ${plac[0]} X ${plac[1]} Chelsea %0APSG ${plac[2]} X ${plac[3]} Real Madrid %0A`
  
 
   window.open(`https://wa.me/5519992481225?text=${text}`)
